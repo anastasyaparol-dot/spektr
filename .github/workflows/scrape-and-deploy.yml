@@ -25,6 +25,9 @@ jobs:
       - name: Установить зависимости
         run: npm ci
 
+      - name: Установить Playwright браузер
+        run: npx playwright install chromium --with-deps
+
       - name: Запустить парсер
         run: node scripts/scrape.mjs
 

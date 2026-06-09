@@ -57,7 +57,7 @@ export default function EventCalendar() {
             <span className="source-card-name">RussiaRunning</span>
             <span className="source-badge source-badge--manual">перейти на сайт</span>
           </div>
-          <div className="source-card-desc">Дополнительный источник</div>
+          <div className="source-card-desc">Для поиска забегов перейди на сайт</div>
         </a>
       </div>
 

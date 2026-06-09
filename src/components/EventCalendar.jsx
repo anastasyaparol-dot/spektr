@@ -32,7 +32,7 @@ export default function EventCalendar() {
         <div>
           <h2 className="cal-title">Календарь забегов</h2>
           <p className="cal-desc">
-            {EVENTS.length} мероприятий · обновлено {formatUpdated(UPDATED)}
+            {EVENTS.length} мероприятий · проверено {formatUpdated(UPDATED)}
           </p>
         </div>
       </div>

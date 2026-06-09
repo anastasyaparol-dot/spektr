@@ -37,24 +37,28 @@ export default function EventCalendar() {
         </div>
       </div>
 
-      <div className="sources-info">
-        <div className="source-auto">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/>
-            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
-          </svg>
-          Данные обновляются автоматически:&nbsp;
-          <a href="https://marathonec.ru/calendar-beg/" target="_blank" rel="noopener noreferrer" className="source-link">Marathon.ru</a>
-          <span className="source-sep">и</span>
-          <a href="https://reg.o-time.ru/calendar" target="_blank" rel="noopener noreferrer" className="source-link">O-time</a>
-        </div>
-        <div className="source-manual">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
-          </svg>
-          <a href="https://reg.russiarunning.com/events/future" target="_blank" rel="noopener noreferrer" className="source-link">RussiaRunning</a>
-          &nbsp;— нужно перейти на сайт
-        </div>
+      <div className="sources-grid">
+        <a href="https://marathonec.ru/calendar-beg/" target="_blank" rel="noopener noreferrer" className="source-card source-card--auto">
+          <div className="source-card-top">
+            <span className="source-card-name">Marathon.ru</span>
+            <span className="source-badge source-badge--auto">автообновление</span>
+          </div>
+          <div className="source-card-desc">Всероссийский календарь забегов</div>
+        </a>
+        <a href="https://reg.o-time.ru/calendar" target="_blank" rel="noopener noreferrer" className="source-card source-card--auto">
+          <div className="source-card-top">
+            <span className="source-card-name">O-time</span>
+            <span className="source-badge source-badge--auto">автообновление</span>
+          </div>
+          <div className="source-card-desc">Северо-Западный регион</div>
+        </a>
+        <a href="https://reg.russiarunning.com/events/future" target="_blank" rel="noopener noreferrer" className="source-card source-card--manual">
+          <div className="source-card-top">
+            <span className="source-card-name">RussiaRunning</span>
+            <span className="source-badge source-badge--manual">перейти на сайт</span>
+          </div>
+          <div className="source-card-desc">Дополнительный источник</div>
+        </a>
       </div>
 
       <input

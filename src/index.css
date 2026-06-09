@@ -1,0 +1,50 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #ffffff;
+  --surface: #f5f5f5;
+  --surface2: #ebebeb;
+  --border: #e0e0e0;
+  --accent: #1a1a1a;
+  --accent-dim: rgba(26, 26, 26, 0.06);
+  --accent-color: #2563eb;
+  --text: #111111;
+  --text-muted: #888888;
+  --radius: 12px;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0f0f0f;
+  --surface: #1a1a1a;
+  --surface2: #242424;
+  --border: #2a2a2a;
+  --accent: #c8f461;
+  --accent-dim: rgba(200, 244, 97, 0.1);
+  --accent-color: #c8f461;
+  --text: #f0f0f0;
+  --text-muted: #666666;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.2s, color 0.2s;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input, select {
+  font-family: inherit;
+}

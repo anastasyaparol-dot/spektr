@@ -27,9 +27,18 @@ function IconTelegram() {
   )
 }
 
+function IconUser() {
+  return (
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+      <circle cx="12" cy="7" r="4"/>
+    </svg>
+  )
+}
+
 import logoImg from '../assets/logo.jpg'
 
-export default function Home({ onNav, theme, onThemeToggle }) {
+export default function Home({ onNav, theme, onThemeToggle, user }) {
   return (
     <div className="home">
       <div className="home-topbar">
@@ -84,6 +93,12 @@ export default function Home({ onNav, theme, onThemeToggle }) {
           <span className="home-card-label">Полезные статьи и информация</span>
           <span className="home-card-desc">Telegram-канал о беге</span>
         </a>
+
+        <button className="home-card" onClick={() => onNav(user?.role === 'admin' ? 'admin' : 'cabinet')}>
+          <span className="home-card-icon"><IconUser /></span>
+          <span className="home-card-label">{user ? `Привет, ${user.name.split(' ')[0]}` : 'Личный кабинет'}</span>
+          <span className="home-card-desc">{user ? (user.role === 'admin' ? 'Админ-панель' : 'Профиль и личные рекорды') : 'Войти или зарегистрироваться'}</span>
+        </button>
       </div>
     </div>
   )

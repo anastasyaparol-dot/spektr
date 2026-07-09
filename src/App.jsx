@@ -3,10 +3,27 @@ import './App.css'
 import Home from './components/Home'
 import PaceCalculator from './components/PaceCalculator'
 import EventCalendar from './components/EventCalendar'
+import AuthPage from './components/AuthPage'
+import Cabinet from './components/Cabinet'
+import AdminPanel from './components/AdminPanel'
 
 export default function App() {
   const [page, setPage] = useState('home')
   const [theme, setTheme] = useState('light')
+  const [user, setUser] = useState(null)
+  const [authChecked, setAuthChecked] = useState(false)
+
+  useEffect(() => {
+    const token = localStorage.getItem('token')
+    if (token) {
+      fetch('/api/auth/me', { headers: { Authorization: `Bearer ${token}` } })
+        .then(r => r.ok ? r.json() : null)
+        .then(d => { if (d) setUser(d.user) })
+        .finally(() => setAuthChecked(true))
+    } else {
+      setAuthChecked(true)
+    }
+  }, [])
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
@@ -14,9 +31,25 @@ export default function App() {
 
   const toggleTheme = () => setTheme(t => t === 'light' ? 'dark' : 'light')
 
+  function handleAuth(u) {
+    setUser(u)
+    setPage(u.role === 'admin' ? 'admin' : 'cabinet')
+  }
+
+  function logout() {
+    localStorage.removeItem('token')
+    setUser(null)
+    setPage('home')
+  }
+
+  if (!authChecked) return null
+
+  const isInner = page !== 'home'
+  const isCabinet = page === 'cabinet' || page === 'admin' || page === 'auth'
+
   return (
     <div className="app">
-      {page !== 'home' && (
+      {isInner && (
         <header className="header">
           <button className="back-btn" onClick={() => setPage('home')}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -26,14 +59,12 @@ export default function App() {
             На главную
           </button>
           <div className="header-right">
-            <nav className="tabs">
-              <button className={`tab ${page === 'calendar' ? 'active' : ''}`} onClick={() => setPage('calendar')}>
-                Календарь
-              </button>
-              <button className={`tab ${page === 'pace' ? 'active' : ''}`} onClick={() => setPage('pace')}>
-                Темп
-              </button>
-            </nav>
+            {!isCabinet && (
+              <nav className="tabs">
+                <button className={`tab ${page === 'calendar' ? 'active' : ''}`} onClick={() => setPage('calendar')}>Календарь</button>
+                <button className={`tab ${page === 'pace' ? 'active' : ''}`} onClick={() => setPage('pace')}>Темп</button>
+              </nav>
+            )}
             <button className="theme-toggle" onClick={toggleTheme} aria-label="Сменить тему">
               {theme === 'dark' ? (
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -54,9 +85,16 @@ export default function App() {
       )}
 
       <main>
-        {page === 'home' && <Home onNav={setPage} theme={theme} onThemeToggle={toggleTheme} />}
+        {page === 'home' && <Home onNav={setPage} theme={theme} onThemeToggle={toggleTheme} user={user} />}
         {page === 'calendar' && <EventCalendar />}
         {page === 'pace' && <PaceCalculator />}
+        {(page === 'auth' || page === 'cabinet' || page === 'admin') && (
+          !user
+            ? <AuthPage onAuth={handleAuth} />
+            : user.role === 'admin'
+              ? <AdminPanel onLogout={logout} />
+              : <Cabinet user={user} onLogout={logout} onUpdate={setUser} />
+        )}
       </main>
     </div>
   )

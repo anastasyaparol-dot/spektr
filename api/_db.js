@@ -26,4 +26,18 @@ export async function initDB() {
       updated_at TIMESTAMPTZ DEFAULT NOW()
     )
   `
+  await sql`
+    CREATE TABLE IF NOT EXISTS races (
+      id          SERIAL PRIMARY KEY,
+      user_id     INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+      name        TEXT NOT NULL,
+      date        DATE NOT NULL,
+      distance    TEXT,
+      url         TEXT,
+      goal_time   TEXT,
+      result_time TEXT,
+      notes       TEXT,
+      created_at  TIMESTAMPTZ DEFAULT NOW()
+    )
+  `
 }

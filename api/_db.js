@@ -36,6 +36,7 @@ export async function initDB() {
       updated_at   TIMESTAMPTZ DEFAULT NOW()
     )
   `
+  await sql`ALTER TABLE users ADD COLUMN IF NOT EXISTS telegram_id BIGINT UNIQUE`
   // миграция: добавляем новые колонки если таблица уже существует
   await sql`ALTER TABLE profiles ADD COLUMN IF NOT EXISTS avatar_url TEXT`
   await sql`ALTER TABLE profiles ADD COLUMN IF NOT EXISTS weight NUMERIC`
@@ -47,6 +48,23 @@ export async function initDB() {
   await sql`ALTER TABLE profiles ADD COLUMN IF NOT EXISTS goal_text TEXT`
   await sql`ALTER TABLE profiles ADD COLUMN IF NOT EXISTS injuries TEXT`
   await sql`ALTER TABLE profiles ADD COLUMN IF NOT EXISTS restrictions TEXT`
+  await sql`
+    CREATE TABLE IF NOT EXISTS trainings (
+      id           SERIAL PRIMARY KEY,
+      user_id      INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+      date         DATE NOT NULL,
+      distance_km  NUMERIC,
+      duration     TEXT,
+      pace         TEXT,
+      avg_hr       INTEGER,
+      max_hr       INTEGER,
+      elevation    INTEGER,
+      calories     INTEGER,
+      notes        TEXT,
+      source       TEXT DEFAULT 'telegram',
+      created_at   TIMESTAMPTZ DEFAULT NOW()
+    )
+  `
   await sql`
     CREATE TABLE IF NOT EXISTS races (
       id          SERIAL PRIMARY KEY,

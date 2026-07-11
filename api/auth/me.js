@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken'
-import { sql } from '../_db.js'
+import { sql, initDB } from '../_db.js'
 
 const JWT_SECRET = process.env.JWT_SECRET || 'spektr-secret-key'
 
@@ -16,9 +16,14 @@ export default async function handler(req, res) {
     return res.status(401).json({ error: 'Токен недействителен' })
   }
 
+  await initDB()
+
   const [user] = await sql`
     SELECT u.id, u.email, u.name, u.role, u.created_at,
-           p.bio, p.city, p.birth_year, p.pr_5k, p.pr_10k, p.pr_half, p.pr_marathon
+           p.avatar_url, p.bio, p.city, p.birth_year,
+           p.weight, p.height, p.max_hr, p.resting_hr, p.vo2max,
+           p.pr_5k, p.pr_10k, p.pr_half, p.pr_marathon, p.pr_backyard,
+           p.goal_text, p.injuries, p.restrictions
     FROM users u
     LEFT JOIN profiles p ON p.user_id = u.id
     WHERE u.id = ${payload.id}

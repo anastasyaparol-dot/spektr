@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken'
-import { sql } from '../_db.js'
+import { sql, initDB } from '../_db.js'
 
 const JWT_SECRET = process.env.JWT_SECRET || 'spektr-secret-key'
 
@@ -16,7 +16,14 @@ export default async function handler(req, res) {
     return res.status(401).json({ error: 'Токен недействителен' })
   }
 
-  const { name, bio, city, birth_year, pr_5k, pr_10k, pr_half, pr_marathon } = req.body
+  await initDB()
+
+  const {
+    name, avatar_url, bio, city, birth_year,
+    weight, height, max_hr, resting_hr, vo2max,
+    pr_5k, pr_10k, pr_half, pr_marathon, pr_backyard,
+    goal_text, injuries, restrictions
+  } = req.body
 
   if (name) {
     await sql`UPDATE users SET name = ${name} WHERE id = ${payload.id}`
@@ -24,14 +31,24 @@ export default async function handler(req, res) {
 
   await sql`
     UPDATE profiles SET
-      bio = ${bio ?? null},
-      city = ${city ?? null},
-      birth_year = ${birth_year ?? null},
-      pr_5k = ${pr_5k ?? null},
-      pr_10k = ${pr_10k ?? null},
-      pr_half = ${pr_half ?? null},
-      pr_marathon = ${pr_marathon ?? null},
-      updated_at = NOW()
+      avatar_url   = ${avatar_url ?? null},
+      bio          = ${bio ?? null},
+      city         = ${city ?? null},
+      birth_year   = ${birth_year ?? null},
+      weight       = ${weight ?? null},
+      height       = ${height ?? null},
+      max_hr       = ${max_hr ?? null},
+      resting_hr   = ${resting_hr ?? null},
+      vo2max       = ${vo2max ?? null},
+      pr_5k        = ${pr_5k ?? null},
+      pr_10k       = ${pr_10k ?? null},
+      pr_half      = ${pr_half ?? null},
+      pr_marathon  = ${pr_marathon ?? null},
+      pr_backyard  = ${pr_backyard ?? null},
+      goal_text    = ${goal_text ?? null},
+      injuries     = ${injuries ?? null},
+      restrictions = ${restrictions ?? null},
+      updated_at   = NOW()
     WHERE user_id = ${payload.id}
   `
 

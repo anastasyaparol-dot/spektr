@@ -45,54 +45,60 @@ async function analyzeImage(imageUrl) {
   } catch { return null }
 }
 
-async function processUpdate(msg) {
+export default async function handler(req, res) {
+  if (req.method !== 'POST') return res.status(200).end()
+
+  const msg = req.body?.message
+  if (!msg) return res.status(200).end()
+
   const chatId = msg.chat.id
   const telegramId = msg.from.id
   const text = msg.text || ''
 
-  await initDB()
+  try {
+    await initDB()
 
-  if (text.startsWith('/start')) {
-    const [user] = await sql`SELECT name FROM users WHERE telegram_id = ${telegramId}`
-    if (user) {
-      await sendMessage(chatId, `👋 Привет, <b>${user.name}</b>!\n\nОтправь скриншот тренировки — внесу в кабинет.`)
-    } else {
-      await sendMessage(chatId, `👋 Привет! Я бот Спектра.\n\nОтправь свой <b>email</b>, которым зарегистрирован(а) на <b>spektr-ebon.vercel.app</b> — привяжу аккаунт.`)
-    }
-    return
-  }
-
-  // Привязка по email
-  if (text.includes('@') && !msg.photo) {
-    const email = text.trim().toLowerCase()
-    const [user] = await sql`SELECT id, name FROM users WHERE email = ${email}`
-    if (!user) {
-      await sendMessage(chatId, `❌ Email <b>${email}</b> не найден.\n\nСначала зарегистрируйся на spektr-ebon.vercel.app`)
-    } else {
-      await sql`UPDATE users SET telegram_id = ${telegramId} WHERE id = ${user.id}`
-      await sendMessage(chatId, `✅ Готово, <b>${user.name}</b>! Аккаунт привязан.\n\nТеперь отправляй скриншоты тренировок 📸`)
-    }
-    return
-  }
-
-  // Скриншот
-  if (msg.photo) {
-    const [user] = await sql`SELECT id, name FROM users WHERE telegram_id = ${telegramId}`
-    if (!user) {
-      await sendMessage(chatId, `❌ Сначала отправь свой email от Спектра, чтобы привязать аккаунт.`)
-      return
+    // /start
+    if (text.startsWith('/start')) {
+      const [user] = await sql`SELECT name FROM users WHERE telegram_id = ${telegramId}`
+      if (user) {
+        await sendMessage(chatId, `👋 Привет, <b>${user.name}</b>!\n\nОтправь скриншот тренировки — внесу в кабинет.`)
+      } else {
+        await sendMessage(chatId, `👋 Привет! Я бот Спектра.\n\nОтправь свой <b>email</b>, которым зарегистрирован(а) на spektr-ebon.vercel.app — привяжу аккаунт.`)
+      }
+      return res.status(200).end()
     }
 
-    await sendMessage(chatId, `⏳ Анализирую...`)
+    // Привязка по email
+    if (text.includes('@') && !msg.photo) {
+      const email = text.trim().toLowerCase()
+      const [user] = await sql`SELECT id, name FROM users WHERE email = ${email}`
+      if (!user) {
+        await sendMessage(chatId, `❌ Email <b>${email}</b> не найден.\n\nСначала зарегистрируйся на spektr-ebon.vercel.app`)
+      } else {
+        await sql`UPDATE users SET telegram_id = ${telegramId} WHERE id = ${user.id}`
+        await sendMessage(chatId, `✅ Готово, <b>${user.name}</b>! Аккаунт привязан.\n\nТеперь отправляй скриншоты тренировок 📸`)
+      }
+      return res.status(200).end()
+    }
 
-    try {
+    // Скриншот
+    if (msg.photo) {
+      const [user] = await sql`SELECT id FROM users WHERE telegram_id = ${telegramId}`
+      if (!user) {
+        await sendMessage(chatId, `❌ Сначала отправь свой email от Спектра.`)
+        return res.status(200).end()
+      }
+
+      await sendMessage(chatId, `⏳ Анализирую...`)
+
       const photo = msg.photo[msg.photo.length - 1]
       const imageUrl = await getFileUrl(photo.file_id)
       const data = await analyzeImage(imageUrl)
 
       if (!data) {
         await sendMessage(chatId, `❌ Не смог распознать. Попробуй другой скриншот.`)
-        return
+        return res.status(200).end()
       }
 
       const date = data.date || new Date().toISOString().split('T')[0]
@@ -109,35 +115,25 @@ async function processUpdate(msg) {
         data.distance_km ? `🏃 ${data.distance_km} км` : '',
         data.duration ? `⏱ ${data.duration}` : '',
         data.pace ? `📈 Темп: ${data.pace}/км` : '',
-        data.avg_hr ? `❤️ Пульс ср: ${data.avg_hr}` : '',
+        data.avg_hr ? `❤️ Пульс: ${data.avg_hr}` : '',
         data.elevation ? `⛰ Набор: ${data.elevation} м` : '',
         data.calories ? `🔥 ${data.calories} ккал` : '',
       ].filter(Boolean).join('\n')
 
       await sendMessage(chatId, lines)
-    } catch (e) {
-      await sendMessage(chatId, `❌ Ошибка обработки: ${e.message.slice(0, 80)}`)
+      return res.status(200).end()
     }
-    return
+
+    // Всё остальное
+    const [user] = await sql`SELECT id FROM users WHERE telegram_id = ${telegramId}`
+    await sendMessage(chatId, user
+      ? `Отправь скриншот тренировки 📸`
+      : `Отправь свой <b>email</b> от Спектра, чтобы привязать аккаунт.`)
+
+  } catch (e) {
+    console.error('webhook error:', e.message)
+    try { await sendMessage(chatId, `❌ Ошибка: ${e.message.slice(0, 100)}`) } catch {}
   }
 
-  // Всё остальное
-  const [user] = await sql`SELECT id FROM users WHERE telegram_id = ${telegramId}`
-  if (!user) {
-    await sendMessage(chatId, `Отправь свой <b>email</b> от Спектра, чтобы привязать аккаунт.`)
-  } else {
-    await sendMessage(chatId, `Отправь скриншот тренировки 📸`)
-  }
-}
-
-export default async function handler(req, res) {
-  // Отвечаем Telegram сразу — иначе он будет повторять запрос
   res.status(200).end()
-
-  if (req.method !== 'POST') return
-  const msg = req.body?.message
-  if (!msg) return
-
-  // Обрабатываем асинхронно после ответа
-  processUpdate(msg).catch(console.error)
 }

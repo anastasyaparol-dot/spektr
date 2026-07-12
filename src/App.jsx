@@ -8,6 +8,7 @@ import Cabinet from './components/Cabinet'
 import AdminPanel from './components/AdminPanel'
 import GearChat from './components/GearChat'
 import Club from './components/Club'
+import RunnerScale from './components/RunnerScale'
 
 export default function App() {
   const [page, setPage] = useState('home')
@@ -51,6 +52,7 @@ export default function App() {
 
   return (
     <div className="app">
+      <RunnerScale />
       {isInner && (
         <header className="header">
           <button className="back-btn" onClick={() => setPage('home')}>

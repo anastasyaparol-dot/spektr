@@ -1490,6 +1490,29 @@
   opacity: 0.85;
 }
 
+/* ── RUNNER SCALE ── */
+.runner-scale {
+  position: fixed;
+  right: calc(50% - 490px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  opacity: 0.35;
+  pointer-events: none;
+  color: var(--text);
+}
+
+.runner-scale svg {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1060px) {
+  .runner-scale {
+    display: none;
+  }
+}
+
 /* ── CLUB ── */
 .home-card-club {
   border-color: var(--accent) !important;

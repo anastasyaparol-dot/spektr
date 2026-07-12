@@ -103,6 +103,12 @@ export default function Home({ onNav, theme, onThemeToggle, user }) {
           <span className="home-card-desc">Telegram-канал о беге</span>
         </a>
 
+        <button className="home-card home-card-club" onClick={() => onNav('club')}>
+          <span className="home-card-icon">🏃</span>
+          <span className="home-card-label">Хочу в клуб СПЕКТР</span>
+          <span className="home-card-desc">Индивидуальное тренерское ведение</span>
+        </button>
+
         <button className="home-card" onClick={() => onNav('gear')}>
           <span className="home-card-icon"><IconShoe /></span>
           <span className="home-card-label">ИИ помощник: экипировка</span>

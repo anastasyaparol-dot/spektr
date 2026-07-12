@@ -69,6 +69,14 @@ export async function initDB() {
   await sql`ALTER TABLE trainings ADD COLUMN IF NOT EXISTS difficulty INTEGER`
   await sql`ALTER TABLE trainings ADD COLUMN IF NOT EXISTS source TEXT`
   await sql`
+    CREATE TABLE IF NOT EXISTS bot_sessions (
+      telegram_id BIGINT PRIMARY KEY,
+      state       TEXT,
+      data        JSONB,
+      updated_at  TIMESTAMPTZ DEFAULT NOW()
+    )
+  `
+  await sql`
     CREATE TABLE IF NOT EXISTS races (
       id          SERIAL PRIMARY KEY,
       user_id     INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,

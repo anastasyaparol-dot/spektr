@@ -287,7 +287,7 @@ export default async function handler(req, res) {
     }
 
     // ── Экипировка ──
-    if (text === '👟 Экипировка') {
+    if (text === '👟 Экипировка с ИИ помощником') {
       await clearSession(telegramId)
       await setSession(telegramId, 'gear_chat', { messages: [] })
       await send(chatId, `👟 <b>ИИ по экипировке</b>\n\nСпроси про кроссовки, одежду или снаряжение — дам конкретные рекомендации.\n\n<i>Отправь /menu чтобы вернуться в меню.</i>`, { reply_markup: mainMenu() })

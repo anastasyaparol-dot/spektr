@@ -23,7 +23,8 @@ async function analyzeImage(imageUrl) {
   const imageRes = await fetch(imageUrl)
   const buffer = await imageRes.arrayBuffer()
   const base64 = Buffer.from(buffer).toString('base64')
-  const contentType = imageRes.headers.get('content-type') || 'image/jpeg'
+  // Telegram всегда шлёт JPEG, Anthropic принимает только jpeg/png/gif/webp
+  const contentType = 'image/jpeg'
 
   const response = await anthropic.messages.create({
     model: 'claude-haiku-4-5-20251001',

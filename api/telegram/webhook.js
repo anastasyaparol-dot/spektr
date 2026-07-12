@@ -175,16 +175,8 @@ export default async function handler(req, res) {
 
     if (cb.data.startsWith('calc:f1:')) {
       const field1 = cb.data.split(':')[2]
-      await setSession(telegramId2, 'calc_pick2', { field1 })
-      await send(chatId2, `Выбери <b>вторую</b> величину:`, {
-        reply_markup: {
-          inline_keyboard: [
-            Object.entries(FIELD_LABELS)
-              .filter(([k]) => k !== field1)
-              .map(([k, v]) => ({ text: v, callback_data: `calc:f2:${k}` }))
-          ]
-        }
-      })
+      await setSession(telegramId2, 'calc_val1', { field1 })
+      await send(chatId2, `Введи ${FIELD_NAMES[field1]}:`)
       return res.status(200).end()
     }
 
@@ -192,8 +184,8 @@ export default async function handler(req, res) {
       const field2 = cb.data.split(':')[2]
       const session2 = await getSession(telegramId2)
       const data2 = { ...session2.data, field2 }
-      await setSession(telegramId2, 'calc_val1', data2)
-      await send(chatId2, `Введи ${FIELD_NAMES[data2.field1]}:`)
+      await setSession(telegramId2, 'calc_val2', data2)
+      await send(chatId2, `Введи ${FIELD_NAMES[field2]}:`)
       return res.status(200).end()
     }
 
@@ -280,11 +272,19 @@ export default async function handler(req, res) {
       return res.status(200).end()
     }
 
-    // ── Калькулятор: ввод первого значения ──
+    // ── Калькулятор: ввод первого значения → выбор второй величины ──
     if (session.state === 'calc_val1') {
       const data = { ...session.data, val1: text }
-      await setSession(telegramId, 'calc_val2', data)
-      await send(chatId, `Введи ${FIELD_NAMES[data.field2]}:`)
+      await setSession(telegramId, 'calc_pick2', data)
+      await send(chatId, `Выбери <b>вторую</b> величину:`, {
+        reply_markup: {
+          inline_keyboard: [
+            Object.entries(FIELD_LABELS)
+              .filter(([k]) => k !== data.field1)
+              .map(([k, v]) => ({ text: v, callback_data: `calc:f2:${k}` }))
+          ]
+        }
+      })
       return res.status(200).end()
     }
 

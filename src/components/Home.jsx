@@ -30,7 +30,8 @@ function IconTelegram() {
 function IconShoe() {
   return (
     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M3 14s0-7 5-7h8l3 4H5l-2 3z"/><path d="M5 17h14v2H3z"/>
+      <path d="M2 16s0-6 5-8l5 2 4-2 4 3v3H2z"/>
+      <path d="M2 16h18v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-2z"/>
     </svg>
   )
 }
@@ -104,7 +105,7 @@ export default function Home({ onNav, theme, onThemeToggle, user }) {
 
         <button className="home-card" onClick={() => onNav('gear')}>
           <span className="home-card-icon"><IconShoe /></span>
-          <span className="home-card-label">ИИ по экипировке</span>
+          <span className="home-card-label">ИИ помощник: экипировка</span>
           <span className="home-card-desc">Кроссовки и снаряжение для бега</span>
         </button>
 

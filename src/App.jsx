@@ -6,6 +6,7 @@ import EventCalendar from './components/EventCalendar'
 import AuthPage from './components/AuthPage'
 import Cabinet from './components/Cabinet'
 import AdminPanel from './components/AdminPanel'
+import GearChat from './components/GearChat'
 
 export default function App() {
   const [page, setPage] = useState('home')
@@ -45,7 +46,7 @@ export default function App() {
   if (!authChecked) return null
 
   const isInner = page !== 'home'
-  const isCabinet = page === 'cabinet' || page === 'admin' || page === 'auth'
+  const isCabinet = page === 'cabinet' || page === 'admin' || page === 'auth' || page === 'gear'
 
   return (
     <div className="app">
@@ -88,6 +89,7 @@ export default function App() {
         {page === 'home' && <Home onNav={setPage} theme={theme} onThemeToggle={toggleTheme} user={user} />}
         {page === 'calendar' && <EventCalendar />}
         {page === 'pace' && <PaceCalculator />}
+        {page === 'gear' && <GearChat />}
         {(page === 'auth' || page === 'cabinet' || page === 'admin') && (
           !user
             ? <AuthPage onAuth={handleAuth} />

@@ -21,12 +21,27 @@ function mainMenu() {
   return {
     keyboard: [
       [{ text: '🏃 Калькулятор темпа' }, { text: '📊 Отправить тренировку' }],
-      [{ text: '📢 Канал Максима Романова' }, { text: '🌐 Перейти на сайт' }],
+      [{ text: '👟 Экипировка' }, { text: '📢 Канал Максима Романова' }],
+      [{ text: '🌐 Перейти на сайт' }],
     ],
     resize_keyboard: true,
     persistent: true
   }
 }
+
+const GEAR_SYSTEM = `Ты — эксперт по беговой экипировке платформы Спектр. Помогаешь бегунам выбирать кроссовки, одежду и снаряжение.
+
+Твои знания охватывают:
+- Кроссовки для разных типов бега: асфальт, трейл, манеж, соревнования, ежедневные тренировки
+- Актуальные модели: Nike (Vaporfly, Alphafly, Pegasus, Invincible), Adidas (Adizero, Ultraboost, Supernova), ASICS (Gel-Kayano, Nimbus, MetaSpeed), Brooks (Ghost, Glycerin, Hyperion), Hoka (Clifton, Bondi, Speedgoat, Carbon X), Saucony (Endorphin Speed/Pro, Ride), On Running (Cloudmonster, Cloudultra), Mizuno, New Balance (Fresh Foam, FuelCell)
+- Подбор по типу пронации, весу, уровню бегуна
+- Беговая одежда, гаджеты, питание и аксессуары
+
+Правила:
+- Отвечай коротко и по делу (для Telegram — до 300 слов)
+- Давай конкретные рекомендации с названиями моделей
+- Пиши на русском
+- Не придумывай несуществующих моделей`
 
 async function send(chat_id, text, extra = {}) {
   await tg('sendMessage', { chat_id, text, parse_mode: 'HTML', ...extra })
@@ -242,6 +257,36 @@ export default async function handler(req, res) {
           ]
         }
       })
+      return res.status(200).end()
+    }
+
+    // ── Экипировка ──
+    if (text === '👟 Экипировка') {
+      await clearSession(telegramId)
+      await setSession(telegramId, 'gear_chat', { messages: [] })
+      await send(chatId, `👟 <b>ИИ по экипировке</b>\n\nСпроси про кроссовки, одежду или снаряжение — дам конкретные рекомендации.\n\n<i>Отправь /menu чтобы вернуться в меню.</i>`, { reply_markup: mainMenu() })
+      return res.status(200).end()
+    }
+
+    // ── Gear chat state ──
+    if (session.state === 'gear_chat') {
+      if (text === '/menu') {
+        await clearSession(telegramId)
+        await send(chatId, `Главное меню:`, { reply_markup: mainMenu() })
+        return res.status(200).end()
+      }
+      const history = (session.data?.messages || [])
+      history.push({ role: 'user', content: text })
+      const gearResp = await anthropic.messages.create({
+        model: 'claude-haiku-4-5-20251001',
+        max_tokens: 500,
+        system: GEAR_SYSTEM,
+        messages: history.slice(-10)
+      })
+      const reply = gearResp.content[0].text
+      history.push({ role: 'assistant', content: reply })
+      await setSession(telegramId, 'gear_chat', { messages: history.slice(-10) })
+      await send(chatId, reply + '\n\n<i>/menu — вернуться в меню</i>')
       return res.status(200).end()
     }
 

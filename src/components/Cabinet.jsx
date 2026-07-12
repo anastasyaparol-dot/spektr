@@ -177,11 +177,34 @@ function RaceCard({ race, onEdit, onDelete }) {
   )
 }
 
+// ── Карточка тренировки ──────────────────────────────────────
+function TrainingCard({ t }) {
+  return (
+    <div className="training-card">
+      <div className="race-card-date">
+        <div className="event-date-day">{new Date(t.date).getUTCDate()}</div>
+        <div className="event-date-month">{MONTHS[new Date(t.date).getUTCMonth()]}</div>
+      </div>
+      <div className="training-stats">
+        {t.distance_km && <div className="training-stat"><span className="training-val">{t.distance_km}</span><span className="training-unit">км</span></div>}
+        {t.duration && <div className="training-stat"><span className="training-val">{t.duration}</span><span className="training-unit">время</span></div>}
+        {t.pace && <div className="training-stat"><span className="training-val">{t.pace}</span><span className="training-unit">мин/км</span></div>}
+        {t.avg_hr && <div className="training-stat"><span className="training-val">{t.avg_hr}</span><span className="training-unit">пульс</span></div>}
+        {t.elevation && <div className="training-stat"><span className="training-val">{t.elevation}</span><span className="training-unit">м↑</span></div>}
+        {t.calories && <div className="training-stat"><span className="training-val">{t.calories}</span><span className="training-unit">ккал</span></div>}
+      </div>
+      {t.notes && <div className="training-notes">{t.notes}</div>}
+    </div>
+  )
+}
+
 // ── Главный компонент ─────────────────────────────────────────
 export default function Cabinet({ user, onLogout, onUpdate }) {
   const [tab, setTab] = useState('races')
   const [races, setRaces] = useState([])
   const [racesLoaded, setRacesLoaded] = useState(false)
+  const [trainings, setTrainings] = useState([])
+  const [trainingsLoaded, setTrainingsLoaded] = useState(false)
   const [adding, setAdding] = useState(false)
   const [editing, setEditing] = useState(null)
   const [profileEditing, setProfileEditing] = useState(false)
@@ -216,7 +239,12 @@ export default function Cabinet({ user, onLogout, onUpdate }) {
         .then(r => r.json())
         .then(d => { setRaces(d.races || []); setRacesLoaded(true) })
     }
-  }, [tab, racesLoaded])
+    if (tab === 'trainings' && !trainingsLoaded) {
+      fetch('/api/trainings/list', { headers: authHeader() })
+        .then(r => r.json())
+        .then(d => { setTrainings(d.trainings || []); setTrainingsLoaded(true) })
+    }
+  }, [tab, racesLoaded, trainingsLoaded])
 
   async function saveProfile(e) {
     e.preventDefault()
@@ -282,10 +310,27 @@ export default function Cabinet({ user, onLogout, onUpdate }) {
 
       {/* Навигация */}
       <div className="cabinet-nav">
-        <button className={`cabinet-nav-btn ${tab === 'races' ? 'active' : ''}`} onClick={() => setTab('races')}>Мои забеги</button>
+        <button className={`cabinet-nav-btn ${tab === 'trainings' ? 'active' : ''}`} onClick={() => setTab('trainings')}>Тренировки</button>
+        <button className={`cabinet-nav-btn ${tab === 'races' ? 'active' : ''}`} onClick={() => setTab('races')}>Забеги</button>
         <button className={`cabinet-nav-btn ${tab === 'profile' ? 'active' : ''}`} onClick={() => setTab('profile')}>Профиль</button>
         <button className={`cabinet-nav-btn ${tab === 'health' ? 'active' : ''}`} onClick={() => setTab('health')}>Здоровье</button>
       </div>
+
+      {/* ── ТРЕНИРОВКИ ── */}
+      {tab === 'trainings' && (
+        <div>
+          <div className="training-hint">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+            Отправь скриншот тренировки боту <b>@spektr_run_bot</b> в Telegram — данные появятся здесь автоматически
+          </div>
+
+          {!trainingsLoaded && <p className="no-events">Загрузка...</p>}
+          {trainingsLoaded && trainings.length === 0 && (
+            <p className="no-events">Тренировок пока нет.<br/>Отправь скриншот боту в Telegram.</p>
+          )}
+          {trainings.map(t => <TrainingCard key={t.id} t={t} />)}
+        </div>
+      )}
 
       {/* ── МОИ ЗАБЕГИ ── */}
       {tab === 'races' && (

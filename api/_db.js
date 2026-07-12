@@ -61,10 +61,13 @@ export async function initDB() {
       elevation    INTEGER,
       calories     INTEGER,
       notes        TEXT,
-      source       TEXT DEFAULT 'telegram',
+      difficulty   INTEGER,
+      source       TEXT DEFAULT 'manual',
       created_at   TIMESTAMPTZ DEFAULT NOW()
     )
   `
+  await sql`ALTER TABLE trainings ADD COLUMN IF NOT EXISTS difficulty INTEGER`
+  await sql`ALTER TABLE trainings ADD COLUMN IF NOT EXISTS source TEXT`
   await sql`
     CREATE TABLE IF NOT EXISTS races (
       id          SERIAL PRIMARY KEY,

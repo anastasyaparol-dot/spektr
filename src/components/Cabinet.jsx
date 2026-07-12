@@ -177,23 +177,123 @@ function RaceCard({ race, onEdit, onDelete }) {
   )
 }
 
+const DIFFICULTY_LABELS = ['', '😌 Лёгкая', '🙂 Средняя', '😤 Тяжёлая', '🥵 Очень тяжёлая', '💀 Предельная']
+const DIFFICULTY_COLORS = ['', '#4ade80', '#a3e635', '#facc15', '#fb923c', '#f87171']
+
+// ── Форма тренировки ─────────────────────────────────────────
+function TrainingForm({ initial, onSave, onCancel }) {
+  const today = new Date().toISOString().split('T')[0]
+  const [form, setForm] = useState({
+    date: today, distance_km: '', duration: '', pace: '',
+    avg_hr: '', max_hr: '', elevation: '', calories: '',
+    notes: '', difficulty: 0,
+    ...initial
+  })
+  const [saving, setSaving] = useState(false)
+  const [err, setErr] = useState('')
+  const set = k => e => setForm(f => ({ ...f, [k]: e.target.value }))
+
+  async function submit(e) {
+    e.preventDefault()
+    if (!form.date) { setErr('Укажи дату'); return }
+    setSaving(true)
+    const res = await fetch('/api/trainings/save', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', ...authHeader() },
+      body: JSON.stringify({ ...form, difficulty: form.difficulty || null })
+    })
+    const data = await res.json()
+    setSaving(false)
+    if (res.ok) onSave({ ...form, id: initial?.id || data.id })
+    else setErr(data.error || 'Ошибка')
+  }
+
+  return (
+    <div className="race-form-wrap">
+      <div style={{ padding: '14px 16px', borderBottom: '1px solid var(--border)', fontWeight: 600, fontSize: 14 }}>
+        {initial?.id ? 'Редактировать тренировку' : 'Добавить тренировку'}
+      </div>
+      <form onSubmit={submit} className="cabinet-form">
+        <div className="calc-grid">
+          <div className="field"><label>Дата</label><input type="date" value={form.date} onChange={set('date')} required /></div>
+          <div className="field"><label>Тип</label><input value={form.notes} onChange={set('notes')} placeholder="Бег, велосипед..." /></div>
+        </div>
+        <div className="calc-grid">
+          <div className="field"><label>Дистанция (км)</label><input type="number" step="0.01" value={form.distance_km} onChange={set('distance_km')} placeholder="9.5" /></div>
+          <div className="field"><label>Время (чч:мм:сс)</label><input value={form.duration} onChange={set('duration')} placeholder="1:03:09" /></div>
+        </div>
+        <div className="calc-grid">
+          <div className="field"><label>Темп (мин/км)</label><input value={form.pace} onChange={set('pace')} placeholder="6:51" /></div>
+          <div className="field"><label>Пульс средний</label><input type="number" value={form.avg_hr} onChange={set('avg_hr')} placeholder="145" /></div>
+        </div>
+        <div className="calc-grid">
+          <div className="field"><label>Набор высоты (м)</label><input type="number" value={form.elevation} onChange={set('elevation')} placeholder="195" /></div>
+          <div className="field"><label>Калории</label><input type="number" value={form.calories} onChange={set('calories')} placeholder="312" /></div>
+        </div>
+
+        <div className="field">
+          <label>Сложность тренировки</label>
+          <div className="difficulty-picker">
+            {DIFFICULTY_LABELS.slice(1).map((label, i) => (
+              <button
+                key={i+1} type="button"
+                className={`difficulty-btn ${form.difficulty === i+1 ? 'active' : ''}`}
+                style={form.difficulty === i+1 ? { borderColor: DIFFICULTY_COLORS[i+1], background: DIFFICULTY_COLORS[i+1] + '22' } : {}}
+                onClick={() => setForm(f => ({ ...f, difficulty: f.difficulty === i+1 ? 0 : i+1 }))}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {err && <p className="auth-error">{err}</p>}
+        <div style={{ display: 'flex', gap: 8 }}>
+          <button type="submit" className="auth-submit" disabled={saving} style={{ flex: 1 }}>
+            {saving ? 'Сохранение...' : initial?.id ? 'Сохранить' : 'Добавить'}
+          </button>
+          <button type="button" className="cab-btn" onClick={onCancel} style={{ padding: '12px 20px' }}>Отмена</button>
+        </div>
+      </form>
+    </div>
+  )
+}
+
 // ── Карточка тренировки ──────────────────────────────────────
-function TrainingCard({ t }) {
+function TrainingCard({ t, onEdit, onDelete }) {
   return (
     <div className="training-card">
       <div className="race-card-date">
         <div className="event-date-day">{new Date(t.date).getUTCDate()}</div>
         <div className="event-date-month">{MONTHS[new Date(t.date).getUTCMonth()]}</div>
       </div>
-      <div className="training-stats">
-        {t.distance_km && <div className="training-stat"><span className="training-val">{t.distance_km}</span><span className="training-unit">км</span></div>}
-        {t.duration && <div className="training-stat"><span className="training-val">{t.duration}</span><span className="training-unit">время</span></div>}
-        {t.pace && <div className="training-stat"><span className="training-val">{t.pace}</span><span className="training-unit">мин/км</span></div>}
-        {t.avg_hr && <div className="training-stat"><span className="training-val">{t.avg_hr}</span><span className="training-unit">пульс</span></div>}
-        {t.elevation && <div className="training-stat"><span className="training-val">{t.elevation}</span><span className="training-unit">м↑</span></div>}
-        {t.calories && <div className="training-stat"><span className="training-val">{t.calories}</span><span className="training-unit">ккал</span></div>}
+      <div className="training-body">
+        <div className="training-stats">
+          {t.distance_km && <div className="training-stat"><span className="training-val">{t.distance_km}</span><span className="training-unit">км</span></div>}
+          {t.duration && <div className="training-stat"><span className="training-val">{t.duration}</span><span className="training-unit">время</span></div>}
+          {t.pace && <div className="training-stat"><span className="training-val">{t.pace}</span><span className="training-unit">мин/км</span></div>}
+          {t.avg_hr && <div className="training-stat"><span className="training-val">{t.avg_hr}</span><span className="training-unit">пульс</span></div>}
+          {t.elevation && <div className="training-stat"><span className="training-val">{t.elevation}</span><span className="training-unit">м↑</span></div>}
+          {t.calories && <div className="training-stat"><span className="training-val">{t.calories}</span><span className="training-unit">ккал</span></div>}
+        </div>
+        <div className="training-footer">
+          {t.notes && <span className="training-notes">{t.notes}</span>}
+          {t.difficulty ? (
+            <span className="difficulty-badge" style={{ color: DIFFICULTY_COLORS[t.difficulty] }}>
+              {DIFFICULTY_LABELS[t.difficulty]}
+            </span>
+          ) : null}
+          {t.source === 'telegram' && <span className="source-badge-mini">TG</span>}
+        </div>
       </div>
-      {t.notes && <div className="training-notes">{t.notes}</div>}
+      <div className="race-card-actions">
+        <button className="race-action-btn" onClick={() => onEdit(t)} title="Редактировать">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        </button>
+        <button className="race-action-btn race-action-btn--del" onClick={() => onDelete(t.id)} title="Удалить">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
+        </button>
+      </div>
     </div>
   )
 }
@@ -205,6 +305,8 @@ export default function Cabinet({ user, onLogout, onUpdate }) {
   const [racesLoaded, setRacesLoaded] = useState(false)
   const [trainings, setTrainings] = useState([])
   const [trainingsLoaded, setTrainingsLoaded] = useState(false)
+  const [addingTraining, setAddingTraining] = useState(false)
+  const [editingTraining, setEditingTraining] = useState(null)
   const [adding, setAdding] = useState(false)
   const [editing, setEditing] = useState(null)
   const [profileEditing, setProfileEditing] = useState(false)
@@ -260,6 +362,24 @@ export default function Cabinet({ user, onLogout, onUpdate }) {
       onUpdate({ ...user, ...form })
       setTimeout(() => setSaved(false), 2000)
     }
+  }
+
+  async function deleteTraining(id) {
+    await fetch('/api/trainings/delete', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', ...authHeader() },
+      body: JSON.stringify({ id })
+    })
+    setTrainings(ts => ts.filter(t => t.id !== id))
+  }
+
+  function onTrainingSaved(t) {
+    if (t.id && trainings.find(x => x.id === t.id)) {
+      setTrainings(ts => ts.map(x => x.id === t.id ? t : x))
+    } else {
+      setTrainings(ts => [t, ...ts])
+    }
+    setAddingTraining(false); setEditingTraining(null)
   }
 
   async function deleteRace(id) {
@@ -318,17 +438,38 @@ export default function Cabinet({ user, onLogout, onUpdate }) {
 
       {/* ── ТРЕНИРОВКИ ── */}
       {tab === 'trainings' && (
-        <div>
-          <div className="training-hint">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
-            Отправь скриншот тренировки боту <b>@spektr_run_bot</b> в Telegram — данные появятся здесь автоматически
-          </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+          {(addingTraining || editingTraining) ? (
+            <TrainingForm
+              initial={editingTraining}
+              onSave={onTrainingSaved}
+              onCancel={() => { setAddingTraining(false); setEditingTraining(null) }}
+            />
+          ) : (
+            <>
+              <div style={{ display: 'flex', gap: 8 }}>
+                <button className="add-race-btn" style={{ flex: 1 }} onClick={() => setAddingTraining(true)}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  Добавить вручную
+                </button>
+              </div>
+              <div className="training-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{flexShrink:0}}><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+                Или отправь скриншот боту <b>@spectrrun_bot</b> в Telegram — данные добавятся автоматически
+              </div>
 
-          {!trainingsLoaded && <p className="no-events">Загрузка...</p>}
-          {trainingsLoaded && trainings.length === 0 && (
-            <p className="no-events">Тренировок пока нет.<br/>Отправь скриншот боту в Telegram.</p>
+              {!trainingsLoaded && <p className="no-events">Загрузка...</p>}
+              {trainingsLoaded && trainings.length === 0 && (
+                <p className="no-events">Тренировок пока нет.<br/>Добавь вручную или отправь скриншот боту.</p>
+              )}
+              {trainings.map(t => (
+                <TrainingCard key={t.id} t={t}
+                  onEdit={setEditingTraining}
+                  onDelete={deleteTraining}
+                />
+              ))}
+            </>
           )}
-          {trainings.map(t => <TrainingCard key={t.id} t={t} />)}
         </div>
       )}
 

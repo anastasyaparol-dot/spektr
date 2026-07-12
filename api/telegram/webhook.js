@@ -5,11 +5,21 @@ const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN
 const API_URL = `https://api.telegram.org/bot${TELEGRAM_TOKEN}`
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
-async function sendMessage(chat_id, text) {
+const DIFFICULTY = ['', '😌 Лёгкая', '🙂 Средняя', '😤 Тяжёлая', '🥵 Очень тяжёлая', '💀 Предельная']
+
+async function sendMessage(chat_id, text, extra = {}) {
   await fetch(`${API_URL}/sendMessage`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ chat_id, text, parse_mode: 'HTML' })
+    body: JSON.stringify({ chat_id, text, parse_mode: 'HTML', ...extra })
+  })
+}
+
+async function answerCallback(callback_query_id) {
+  await fetch(`${API_URL}/answerCallbackQuery`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ callback_query_id })
   })
 }
 
@@ -23,8 +33,6 @@ async function analyzeImage(imageUrl) {
   const imageRes = await fetch(imageUrl)
   const buffer = await imageRes.arrayBuffer()
   const base64 = Buffer.from(buffer).toString('base64')
-  // Telegram всегда шлёт JPEG, Anthropic принимает только jpeg/png/gif/webp
-  const contentType = 'image/jpeg'
 
   const response = await anthropic.messages.create({
     model: 'claude-haiku-4-5-20251001',
@@ -32,7 +40,7 @@ async function analyzeImage(imageUrl) {
     messages: [{
       role: 'user',
       content: [
-        { type: 'image', source: { type: 'base64', media_type: contentType, data: base64 } },
+        { type: 'image', source: { type: 'base64', media_type: 'image/jpeg', data: base64 } },
         { type: 'text', text: `Извлеки данные тренировки. Верни ТОЛЬКО JSON:
 {"date":"YYYY-MM-DD","distance_km":число,"duration":"ЧЧ:ММ:СС","pace":"М:СС","avg_hr":число,"max_hr":число,"elevation":число,"calories":число,"notes":"тип активности"}
 Если поле не найдено — null.` }
@@ -46,10 +54,44 @@ async function analyzeImage(imageUrl) {
   } catch { return null }
 }
 
+function difficultyKeyboard(trainingId) {
+  return {
+    inline_keyboard: [[
+      { text: '😌 1', callback_data: `diff:${trainingId}:1` },
+      { text: '🙂 2', callback_data: `diff:${trainingId}:2` },
+      { text: '😤 3', callback_data: `diff:${trainingId}:3` },
+      { text: '🥵 4', callback_data: `diff:${trainingId}:4` },
+      { text: '💀 5', callback_data: `diff:${trainingId}:5` },
+    ]]
+  }
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(200).end()
 
-  const msg = req.body?.message
+  const update = req.body
+  if (!update) return res.status(200).end()
+
+  await initDB()
+
+  // Inline-кнопка оценки сложности
+  if (update.callback_query) {
+    const cb = update.callback_query
+    const chatId = cb.message.chat.id
+    const telegramId = cb.from.id
+    const [, trainingId, level] = cb.data.split(':')
+
+    await answerCallback(cb.id)
+
+    const [user] = await sql`SELECT id FROM users WHERE telegram_id = ${telegramId}`
+    if (user) {
+      await sql`UPDATE trainings SET difficulty = ${parseInt(level)} WHERE id = ${parseInt(trainingId)} AND user_id = ${user.id}`
+      await sendMessage(chatId, `${DIFFICULTY[level]} — сложность сохранена!`)
+    }
+    return res.status(200).end()
+  }
+
+  const msg = update.message
   if (!msg) return res.status(200).end()
 
   const chatId = msg.chat.id
@@ -57,15 +99,13 @@ export default async function handler(req, res) {
   const text = msg.text || ''
 
   try {
-    await initDB()
-
     // /start
     if (text.startsWith('/start')) {
       const [user] = await sql`SELECT name FROM users WHERE telegram_id = ${telegramId}`
       if (user) {
         await sendMessage(chatId, `👋 Привет, <b>${user.name}</b>!\n\nОтправь скриншот тренировки — внесу в кабинет.`)
       } else {
-        await sendMessage(chatId, `👋 Привет! Я бот Спектра.\n\nОтправь свой <b>email</b>, которым зарегистрирован(а) на spektr-ebon.vercel.app — привяжу аккаунт.`)
+        await sendMessage(chatId, `👋 Привет! Я бот Спектра.\n\nОтправь свой <b>email</b> от spektr-ebon.vercel.app — привяжу аккаунт.`)
       }
       return res.status(200).end()
     }
@@ -103,11 +143,12 @@ export default async function handler(req, res) {
       }
 
       const date = data.date || new Date().toISOString().split('T')[0]
-      await sql`
-        INSERT INTO trainings (user_id, date, distance_km, duration, pace, avg_hr, max_hr, elevation, calories, notes)
+      const [row] = await sql`
+        INSERT INTO trainings (user_id, date, distance_km, duration, pace, avg_hr, max_hr, elevation, calories, notes, source)
         VALUES (${user.id}, ${date}, ${data.distance_km ?? null}, ${data.duration ?? null},
                 ${data.pace ?? null}, ${data.avg_hr ?? null}, ${data.max_hr ?? null},
-                ${data.elevation ?? null}, ${data.calories ?? null}, ${data.notes ?? null})
+                ${data.elevation ?? null}, ${data.calories ?? null}, ${data.notes ?? null}, 'telegram')
+        RETURNING id
       `
 
       const lines = [
@@ -121,7 +162,9 @@ export default async function handler(req, res) {
         data.calories ? `🔥 ${data.calories} ккал` : '',
       ].filter(Boolean).join('\n')
 
-      await sendMessage(chatId, lines)
+      await sendMessage(chatId, lines + '\n\n<b>Оцени сложность тренировки:</b>', {
+        reply_markup: difficultyKeyboard(row.id)
+      })
       return res.status(200).end()
     }
 

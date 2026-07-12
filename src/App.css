@@ -1044,12 +1044,60 @@
   letter-spacing: 0.4px;
 }
 
+.training-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.training-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
 .training-notes {
   font-size: 12px;
   color: var(--text-muted);
   font-style: italic;
-  align-self: center;
 }
+
+.difficulty-badge {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.source-badge-mini {
+  font-size: 10px;
+  background: rgba(37,99,235,0.1);
+  color: var(--accent-color);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-weight: 600;
+}
+
+/* ── DIFFICULTY PICKER ── */
+.difficulty-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.difficulty-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text-muted);
+  font-size: 12px;
+  padding: 5px 12px;
+  transition: all 0.15s;
+}
+
+.difficulty-btn:hover { border-color: var(--text-muted); color: var(--text); }
+.difficulty-btn.active { color: var(--text); font-weight: 600; }
 
 /* ── CABINET NAV ── */
 .cabinet-nav {

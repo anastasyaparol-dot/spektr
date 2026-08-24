@@ -1,134 +1,14 @@
 {
-  "updated": "2026-08-23T03:50:54.461Z",
-  "count": 162,
+  "updated": "2026-08-24T03:54:35.081Z",
+  "count": 153,
   "sources": {
-    "marathonec": 162,
+    "marathonec": 153,
     "otime": 0,
     "russiarunning": 0
   },
   "events": [
     {
       "id": 1,
-      "name": "Полумарафон «Ростов Великий»",
-      "date": "2026-08-23",
-      "city": "Ростов Великий",
-      "distances": [
-        "10 км",
-        "21 км",
-        "3 км",
-        "5 км"
-      ],
-      "source": "marathonec",
-      "url": "https://marathonec.ru/rostov-veliky-polumarafon/"
-    },
-    {
-      "id": 2,
-      "name": "Чебоксарский полумарафон",
-      "date": "2026-08-23",
-      "city": "Чебоксары",
-      "distances": [
-        "10 км",
-        "21 км",
-        "5 км"
-      ],
-      "source": "marathonec",
-      "url": "https://reg.russiarunning.com/event/chemp26#new_tab"
-    },
-    {
-      "id": 3,
-      "name": "Мишкино трейл",
-      "date": "2026-08-23",
-      "city": "Мишкино",
-      "distances": [
-        "14 км",
-        "2 км",
-        "22 км",
-        "8 км"
-      ],
-      "source": "marathonec",
-      "url": "https://reg.russiarunning.com/event/MishkinoTreylGOODTRAIL#new_tab"
-    },
-    {
-      "id": 4,
-      "name": "Верхнекамский калийный трейл",
-      "date": "2026-08-23",
-      "city": "Березнеки",
-      "distances": [
-        "10 км",
-        "20 км",
-        "5 км"
-      ],
-      "source": "marathonec",
-      "url": "https://reg.russiarunning.com/event/Verkhnekamskiyletniyfestivalsporta#new_tab"
-    },
-    {
-      "id": 5,
-      "name": "Самарский международный марафон 2026",
-      "date": "2026-08-23",
-      "city": "Самара",
-      "distances": [
-        "10 км",
-        "21 км",
-        "3 км",
-        "42 км"
-      ],
-      "source": "marathonec",
-      "url": "https://marathonec.ru/samara-marafon-gid/"
-    },
-    {
-      "id": 6,
-      "name": "Челябинский марафон 2026",
-      "date": "2026-08-23",
-      "city": "Челябинск",
-      "distances": [
-        "10 км",
-        "21 км",
-        "42 км",
-        "5 км"
-      ],
-      "source": "marathonec",
-      "url": "https://marathonec.ru/chelyabinsky-marafon-gid/"
-    },
-    {
-      "id": 7,
-      "name": "Чувашия Этноран х Чебоксарский полумарафон",
-      "date": "2026-08-23",
-      "city": "Чебоксары",
-      "distances": [
-        "10 км",
-        "21 км",
-        "5 км"
-      ],
-      "source": "marathonec",
-      "url": "https://reg.russiarunning.com/event/chemp26#new_tab"
-    },
-    {
-      "id": 8,
-      "name": "РУТС Ярославль",
-      "date": "2026-08-23",
-      "city": "Ярославль",
-      "distances": [
-        "10 км",
-        "5 км"
-      ],
-      "source": "marathonec",
-      "url": "https://reg.russiarunning.com/event/RUTSYaroslavl2026#new_tab"
-    },
-    {
-      "id": 9,
-      "name": "Череповецкий полумарафон «Северный край»",
-      "date": "2026-08-23",
-      "city": "Череповец",
-      "distances": [
-        "10 км",
-        "21 км",
-        "3 км"
-      ],
-      "source": "marathonec",
-      "url": "https://reg.russiarunning.com/event/XXXVCherepovetsmarathonNorthernTerritory#new_tab"
-    },
-    {
-      "id": 10,
       "name": "Калужский космический марафон",
       "date": "2026-08-28",
       "city": "Калуга",
@@ -141,7 +21,7 @@
       "url": "https://xn--40-emcadbfdgn.xn--p1ai/events/159#new_tab"
     },
     {
-      "id": 11,
+      "id": 2,
       "name": "Фестиваль «Майская гора»",
       "date": "2026-08-28",
       "city": "Ульяновск",
@@ -157,7 +37,7 @@
       "url": "https://reg.russiarunning.com/event/VYubileynyyFestivalsportaiotdykhaMayskayagora2026#new_tab"
     },
     {
-      "id": 12,
+      "id": 3,
       "name": "Лахти трейл",
       "date": "2026-08-29",
       "city": "Кандалакша",
@@ -171,7 +51,7 @@
       "url": "https://reg.russiarunning.com/event/lahtitrail2026#new_tab"
     },
     {
-      "id": 13,
+      "id": 4,
       "name": "Благотворительный «Забег ради жизни»",
       "date": "2026-08-29",
       "city": "Москва",
@@ -184,7 +64,7 @@
       "url": "https://reg.russiarunning.com/event/ZabegRZH_26#new_tab"
     },
     {
-      "id": 14,
+      "id": 5,
       "name": "O-Trail Дигория",
       "date": "2026-08-29",
       "city": "Стур-Дигора",
@@ -198,7 +78,7 @@
       "url": "https://marathonec.ru/o-trail-digoriya/"
     },
     {
-      "id": 15,
+      "id": 6,
       "name": "Пятигорский полумарафон Kavkaz.Run",
       "date": "2026-08-29",
       "city": "Пятигорск",
@@ -212,7 +92,7 @@
       "url": "https://marathonec.ru/pyatigorskij-polumarafon-kavkaz-run-2/"
     },
     {
-      "id": 16,
+      "id": 7,
       "name": "Забег «Пятигорское кольцо»",
       "date": "2026-08-29",
       "city": "Пятигорск",
@@ -224,7 +104,7 @@
       "url": "https://marathonec.ru/zabeg-pyatigorskoe-kolco/"
     },
     {
-      "id": 17,
+      "id": 8,
       "name": "Лето. Ферма. Трейл",
       "date": "2026-08-29",
       "city": "Клейменово",
@@ -239,7 +119,7 @@
       "url": "https://reg.russiarunning.com/event/LetoFermaTreyl2026#new_tab"
     },
     {
-      "id": 18,
+      "id": 9,
       "name": "Трейл Voldoma Сямжа",
       "date": "2026-08-29",
       "city": "Сямжа",
@@ -254,7 +134,7 @@
       "url": "https://vk.com/away.php?to=https%3A%2F%2Fvologdamarafon.ru%2Fmarafon%2Fvoldoma-%25D1%2581%25D1%258F%25D0%25BC%25D0%25B6%25D0%25B5%25D0%25BD%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9-%25D1%2582%25D1%2580%25D0%25B5%25D0%25B9%25D0%25BB%2F%25D1%2580%25D0%25B5%25D0%25B3%25D0%25B8%25D1%2581%25D1%2582%25D1%2580%25D0%25B0%25D1%2586%25D0%25B8%25D1%258F%2F&#038;utf=1#new_tab"
     },
     {
-      "id": 19,
+      "id": 10,
       "name": "Марьинский полумарафон",
       "date": "2026-08-29",
       "city": "Москва",
@@ -267,7 +147,7 @@
       "url": "https://reg.russiarunning.com/event/MARINSKIYPOLUMARAFONZAKRYTIESEZONA#new_tab"
     },
     {
-      "id": 20,
+      "id": 11,
       "name": "Космо Трейл",
       "date": "2026-08-29",
       "city": "Красный Мак",
@@ -280,7 +160,7 @@
       "url": "https://reg.russiarunning.com/event/KosmoTreyl2026#new_tab"
     },
     {
-      "id": 21,
+      "id": 12,
       "name": "Оскольский полумарафон",
       "date": "2026-08-29",
       "city": "Старый Оскол",
@@ -293,7 +173,7 @@
       "url": "https://reg.russiarunning.com/event/Oskolskiypolumarafon2026#new_tab"
     },
     {
-      "id": 22,
+      "id": 13,
       "name": "Юрактау Трейл",
       "date": "2026-08-29",
       "city": "Стерлитамак",
@@ -305,7 +185,7 @@
       "url": "https://reg.russiarunning.com/event/Yuraktautrail#new_tab"
     },
     {
-      "id": 23,
+      "id": 14,
       "name": "Забег «Этноран» в Вологодской области",
       "date": "2026-08-29",
       "city": "Вологда",
@@ -317,7 +197,7 @@
       "url": "https://reg.russiarunning.com/event/EtnoRanVologda#new_tab"
     },
     {
-      "id": 24,
+      "id": 15,
       "name": "КроссФест Александрино Спортмастер Про",
       "date": "2026-08-30",
       "city": "Санкт-Петербург",
@@ -329,7 +209,7 @@
       "url": "https://reg.russiarunning.com/event/AlexandrinoSportmasterPROCrossFestdedicatedtoRussianFlagDay#new_tab"
     },
     {
-      "id": 25,
+      "id": 16,
       "name": "Благотворительный забег «Спорт во благо»",
       "date": "2026-08-30",
       "city": "Нижний Новгород",
@@ -341,7 +221,7 @@
       "url": "https://reg.russiarunning.com/event/BLAGOTVORITELNYYPROBEGSPORTVOBLAGONIZhNIYNOVGOROD2026#new_tab"
     },
     {
-      "id": 26,
+      "id": 17,
       "name": "Трейл «Короткая дорога»",
       "date": "2026-08-30",
       "city": "Пеньи",
@@ -354,7 +234,7 @@
       "url": "https://xn----7sbble7aa5aaeargw1r.xn--p1ai/#new_tab"
     },
     {
-      "id": 27,
+      "id": 18,
       "name": "Забег «Адские горки»",
       "date": "2026-08-30",
       "city": "Москва",
@@ -369,7 +249,7 @@
       "url": "https://reg.russiarunning.com/event/ZabegpolumarafonAdskiegorki#new_tab"
     },
     {
-      "id": 28,
+      "id": 19,
       "name": "РУТС Зеленоград",
       "date": "2026-08-30",
       "city": "Зеленоград",
@@ -381,7 +261,7 @@
       "url": "https://reg.russiarunning.com/event/RUTSZelenograd#new_tab"
     },
     {
-      "id": 29,
+      "id": 20,
       "name": "Т-Банк Rosa Wild Fest",
       "date": "2026-09-04",
       "city": "Сочи",
@@ -403,7 +283,7 @@
       "url": "https://marathonec.ru/t-bank-rosa-wild-trail/"
     },
     {
-      "id": 30,
+      "id": 21,
       "name": "Благотворительный забег «Пульс добра»",
       "date": "2026-09-05",
       "city": "Коломна",
@@ -416,7 +296,7 @@
       "url": "https://reg.russiarunning.com/event/Pulsdobra2026#new_tab"
     },
     {
-      "id": 31,
+      "id": 22,
       "name": "Пермский марафон",
       "date": "2026-09-05",
       "city": "Пермь",
@@ -431,7 +311,7 @@
       "url": "https://reg.russiarunning.com/event/Permskiymarafon2026#new_tab"
     },
     {
-      "id": 32,
+      "id": 23,
       "name": "Мончегорский ночной трейл",
       "date": "2026-09-05",
       "city": "Мончегорск",
@@ -443,7 +323,7 @@
       "url": "https://reg.russiarunning.com/event/MONChEGORSKIYNOChNOYTREYL#new_tab"
     },
     {
-      "id": 33,
+      "id": 24,
       "name": "Трейл «Ливень»",
       "date": "2026-09-06",
       "city": "Ильинское",
@@ -456,7 +336,7 @@
       "url": "https://marathonec.ru/trail-liven/"
     },
     {
-      "id": 34,
+      "id": 25,
       "name": "«Каштак Trail –Осень»",
       "date": "2026-09-06",
       "city": "Челябинск",
@@ -469,7 +349,7 @@
       "url": "https://reg.russiarunning.com/event/KAShTAKTRAILOSEN2025#new_tab"
     },
     {
-      "id": 35,
+      "id": 26,
       "name": "Oka River Trail",
       "date": "2026-09-06",
       "city": "Выползово",
@@ -483,7 +363,7 @@
       "url": "https://okarivertrail.ru#new_tab"
     },
     {
-      "id": 36,
+      "id": 27,
       "name": "Петербургский марафон «Пушкин – Петербург» 2026",
       "date": "2026-09-06",
       "city": "Санкт-Петербург",
@@ -497,7 +377,7 @@
       "url": "https://marathonec.ru/pushkin-peterburg-gid/"
     },
     {
-      "id": 37,
+      "id": 28,
       "name": "Волгоградский полумарафон-гандикап",
       "date": "2026-09-06",
       "city": "Волгоград",
@@ -510,7 +390,7 @@
       "url": "https://reg.russiarunning.com/event/VolgogradskiyPolumarafongandikap2026#new_tab"
     },
     {
-      "id": 38,
+      "id": 29,
       "name": "Елецкий полумарафон",
       "date": "2026-09-06",
       "city": "Елец",
@@ -523,7 +403,7 @@
       "url": "https://reg.russiarunning.com/event/Elets2026#new_tab"
     },
     {
-      "id": 39,
+      "id": 30,
       "name": "Truvor ultra trail «Мьёльнир»",
       "date": "2026-09-06",
       "city": "Изборск",
@@ -538,7 +418,7 @@
       "url": "https://reg.o-time.ru/race/26101#new_tab"
     },
     {
-      "id": 40,
+      "id": 31,
       "name": "Трейл «Восхождение на Кумбу»",
       "date": "2026-09-06",
       "city": "Североуральск",
@@ -550,7 +430,7 @@
       "url": "https://myrace.info/events/1626#new_tab"
     },
     {
-      "id": 41,
+      "id": 32,
       "name": "Международный Когалымский полумарафон",
       "date": "2026-09-06",
       "city": "Когалым",
@@ -563,7 +443,7 @@
       "url": "https://reg.russiarunning.com/event/Kogalymskiypolumarafon2026#new_tab"
     },
     {
-      "id": 42,
+      "id": 33,
       "name": "Благотворительный забег «8 городов. Казань»",
       "date": "2026-09-06",
       "city": "Казань",
@@ -577,7 +457,7 @@
       "url": "https://reg.russiarunning.com/event/Blagotvoritelnyyzabeg8gorodovKazan#new_tab"
     },
     {
-      "id": 43,
+      "id": 34,
       "name": "Кондуки Трейл",
       "date": "2026-09-06",
       "city": "Кондуки",
@@ -590,7 +470,7 @@
       "url": "https://reg.russiarunning.com/event/KondukiTreyl#new_tab"
     },
     {
-      "id": 44,
+      "id": 35,
       "name": "Алмазный кросс",
       "date": "2026-09-06",
       "city": "Мирный",
@@ -602,7 +482,7 @@
       "url": "https://reg.russiarunning.com/event/Almazkross2026#new_tab"
     },
     {
-      "id": 45,
+      "id": 36,
       "name": "Камчатка Trail-1",
       "date": "2026-09-10",
       "city": "Петропавловск-Камчатский",
@@ -616,7 +496,7 @@
       "url": "https://marathonec.ru/kamchatka-trail-1/"
     },
     {
-      "id": 46,
+      "id": 37,
       "name": "Альметьевский полумарафон",
       "date": "2026-09-12",
       "city": "Альметьевск",
@@ -629,7 +509,7 @@
       "url": "https://marathonec.ru/almetievsky-polumarafon/"
     },
     {
-      "id": 47,
+      "id": 38,
       "name": "Ночной забег Laser Night Run",
       "date": "2026-09-12",
       "city": "Екатеринбург",
@@ -641,7 +521,7 @@
       "url": "https://reg.russiarunning.com/event/NochnoyzabegLaserNightRun2026#new_tab"
     },
     {
-      "id": 48,
+      "id": 39,
       "name": "Bask Забег на Казбек",
       "date": "2026-09-12",
       "city": "Верхний Кани",
@@ -653,7 +533,7 @@
       "url": "https://toplist.run/race/13173#new_tab"
     },
     {
-      "id": 49,
+      "id": 40,
       "name": "Трейл «Малиновая гора»",
       "date": "2026-09-12",
       "city": "Бисерть",
@@ -665,7 +545,7 @@
       "url": "https://reg.russiarunning.com/event/VITreylMalinovayagora2026#new_tab"
     },
     {
-      "id": 50,
+      "id": 41,
       "name": "Державинская миля",
       "date": "2026-09-12",
       "city": "Тамбов",
@@ -677,7 +557,7 @@
       "url": "https://reg.russiarunning.com/event/Derzhavinskayamilya2026#new_tab"
     },
     {
-      "id": 51,
+      "id": 42,
       "name": "Магнитогорский полумарафон «Азия &#8212; Европа»",
       "date": "2026-09-12",
       "city": "Магнитогорск",
@@ -691,7 +571,7 @@
       "url": "https://reg.russiarunning.com/event/Magnitogorsk#new_tab"
     },
     {
-      "id": 52,
+      "id": 43,
       "name": "Трейл «Тропой Ферапонта»",
       "date": "2026-09-12",
       "city": "Кириллов",
@@ -705,7 +585,7 @@
       "url": "https://vk.com/away.php?to=https%3A%2F%2Fvologdamarafon.ru%2Fmarafon%2F%25D1%2582%25D1%2580%25D0%25B5%25D0%25B9%25D0%25BB-%25D1%2582%25D1%2580%25D0%25BE%25D0%25BF%25D0%25BE%25D0%25B9-%25D1%2584%25D0%25B5%25D1%2580%25D0%25B0%25D0%25BF%25D0%25BE%25D0%25BD%25D1%2582%25D0%25B0%2F%25D1%2580%25D0%25B5%25D0%25B3%25D0%25B8%25D1%2581%25D1%2582%25D1%2580%25D0%25B0%25D1%2586%25D0%25B8%25D1%258F%2F&#038;utf=1#new_tab"
     },
     {
-      "id": 53,
+      "id": 44,
       "name": "Забег «Беслан. Помним»",
       "date": "2026-09-12",
       "city": "8 км",
@@ -716,7 +596,7 @@
       "url": "https://reg.russiarunning.com/event/BeslanPomnim#new_tab"
     },
     {
-      "id": 54,
+      "id": 45,
       "name": "Пластовский полумарафон AuRun",
       "date": "2026-09-12",
       "city": "Пласт",
@@ -729,7 +609,7 @@
       "url": "https://myrace.info/events/1630#new_tab"
     },
     {
-      "id": 55,
+      "id": 46,
       "name": "Благотворительный забег «Хвостатая миля»",
       "date": "2026-09-12",
       "city": "Москва",
@@ -742,7 +622,7 @@
       "url": "https://reg.russiarunning.com/event/KhVOSTATAYaMILYa2026BLAGOTVORITELNYYZABEG#new_tab"
     },
     {
-      "id": 56,
+      "id": 47,
       "name": "Лихва Фест",
       "date": "2026-09-12",
       "city": "Курск",
@@ -754,7 +634,7 @@
       "url": "https://reg.russiarunning.com/event/LihvaFest2026#new_tab"
     },
     {
-      "id": 57,
+      "id": 48,
       "name": "«КультЗабег»",
       "date": "2026-09-12",
       "city": "Воронеж",
@@ -766,7 +646,7 @@
       "url": "https://reg.russiarunning.com/event/cultzabegvrn26#new_tab"
     },
     {
-      "id": 58,
+      "id": 49,
       "name": "Кама Трейл",
       "date": "2026-09-12",
       "city": "Шаркан",
@@ -779,7 +659,7 @@
       "url": "https://reg.russiarunning.com/event/KamaTrailFest2026#new_tab"
     },
     {
-      "id": 59,
+      "id": 50,
       "name": "Забег «Черноголовка 70»",
       "date": "2026-09-12",
       "city": "Черноголовка",
@@ -792,7 +672,7 @@
       "url": "https://reg.russiarunning.com/event/Chernogolovka70#new_tab"
     },
     {
-      "id": 60,
+      "id": 51,
       "name": "Забег «Сийские озёра»",
       "date": "2026-09-12",
       "city": "Брин-Наволок",
@@ -804,7 +684,7 @@
       "url": "https://reg.russiarunning.com/event/712097#new_tab"
     },
     {
-      "id": 61,
+      "id": 52,
       "name": "O-Trail Марафон Алания",
       "date": "2026-09-13",
       "city": "Кобан",
@@ -817,7 +697,7 @@
       "url": "https://reg.russiarunning.com/event/OTRAILMarafonAlaniya2026#new_tab"
     },
     {
-      "id": 62,
+      "id": 53,
       "name": "Аэрокросс-трейл «Калужская взлётка 3»",
       "date": "2026-09-13",
       "city": "Воротынск",
@@ -830,7 +710,7 @@
       "url": "https://reg.russiarunning.com/event/KALUZhSKAVZLYoTKA3#new_tab"
     },
     {
-      "id": 63,
+      "id": 54,
       "name": "Забег невест",
       "date": "2026-09-13",
       "city": "Пермь",
@@ -843,7 +723,7 @@
       "url": "https://reg.russiarunning.com/event/ZabegNevest2026#new_tab"
     },
     {
-      "id": 64,
+      "id": 55,
       "name": "Ярославский полумарафон «Золотое кольцо» 2026",
       "date": "2026-09-13",
       "city": "Ярославль",
@@ -857,7 +737,7 @@
       "url": "https://marathonec.ru/yaroslavsky-polumarafon-gid/"
     },
     {
-      "id": 65,
+      "id": 56,
       "name": "Полумарафон «Оружейная столица»",
       "date": "2026-09-13",
       "city": "Тула",
@@ -870,7 +750,7 @@
       "url": "https://marathonec.ru/polumarafon-oruzhejnaya-stolitsa/"
     },
     {
-      "id": 66,
+      "id": 57,
       "name": "Забег «Тыринская линия»",
       "date": "2026-09-13",
       "city": "Кирсино",
@@ -884,7 +764,7 @@
       "url": "https://reg.russiarunning.com/event/tyrinskaya_2026#new_tab"
     },
     {
-      "id": 67,
+      "id": 58,
       "name": "Исеть Ультра Трейл",
       "date": "2026-09-13",
       "city": "Каменск-Уральский",
@@ -897,7 +777,7 @@
       "url": "https://reg.russiarunning.com/event/isetultratrail2026#new_tab"
     },
     {
-      "id": 68,
+      "id": 59,
       "name": "Парный инклюзивный забег «Больше Чем Можешь»",
       "date": "2026-09-13",
       "city": "Москва",
@@ -910,7 +790,7 @@
       "url": "https://zabeg.morethanable.ru/#new_tab"
     },
     {
-      "id": 69,
+      "id": 60,
       "name": "ЭкоЗабег Сибур",
       "date": "2026-09-16",
       "city": "Тюмень",
@@ -922,7 +802,7 @@
       "url": "https://reg.russiarunning.com/event/EkoZabegSibur2026#new_tab"
     },
     {
-      "id": 70,
+      "id": 61,
       "name": "Ольхон ультра трейл",
       "date": "2026-09-19",
       "city": "Хужир",
@@ -934,7 +814,7 @@
       "url": "https://marathonec.ru/olhon-trail/"
     },
     {
-      "id": 71,
+      "id": 62,
       "name": "Сверхмарафон «Осеннее равноденствие»",
       "date": "2026-09-19",
       "city": "Вологда",
@@ -947,7 +827,7 @@
       "url": "https://reg.russiarunning.com/event/XSverkhmarafonOsenneeravnodenstvie#new_tab"
     },
     {
-      "id": 72,
+      "id": 63,
       "name": "Трейл «Сердце тундры»",
       "date": "2026-09-19",
       "city": "Звенигород",
@@ -960,7 +840,7 @@
       "url": "https://reg.russiarunning.com/event/TreylSerdtseTundry2026#new_tab"
     },
     {
-      "id": 73,
+      "id": 64,
       "name": "Кандрыкульский полумарафон памяти Фарита Давлетшина",
       "date": "2026-09-20",
       "city": "Кандры-Куль",
@@ -973,7 +853,7 @@
       "url": "https://reg.russiarunning.com/event/KandrykulskiypolumarafonpamyatiFaritadavletshina20sentyabrya2026#new_tab"
     },
     {
-      "id": 74,
+      "id": 65,
       "name": "Горный Полумарафон «5 Вершин»",
       "date": "2026-09-20",
       "city": "Исеть",
@@ -987,7 +867,7 @@
       "url": "https://orgeo.ru/event/treiliset#new_tab"
     },
     {
-      "id": 75,
+      "id": 66,
       "name": "Жемчужная восьмёрка Спортмастер Про",
       "date": "2026-09-20",
       "city": "Санкт-Петербург",
@@ -999,7 +879,7 @@
       "url": "https://reg.russiarunning.com/event/IIPearlEightofSportmasterPROdedicatedtotheAllRussianRunningDay#new_tab"
     },
     {
-      "id": 76,
+      "id": 67,
       "name": "Благотворительный «Добрый забег»",
       "date": "2026-09-20",
       "city": "Москва",
@@ -1012,7 +892,7 @@
       "url": "https://reg.russiarunning.com/event/IIIblagotvoritelnyyDobryyzabeg26#new_tab"
     },
     {
-      "id": 77,
+      "id": 68,
       "name": "Забег Atletica",
       "date": "2026-09-26",
       "city": "Махачкала",
@@ -1025,7 +905,7 @@
       "url": "https://reg.russiarunning.com/event/ATLETICAZABEG2026#new_tab"
     },
     {
-      "id": 78,
+      "id": 69,
       "name": "Атомный трейл",
       "date": "2026-09-26",
       "city": "Обнинск",
@@ -1039,7 +919,7 @@
       "url": "https://xn--40-emcadbfdgn.xn--p1ai/events/160#new_tab"
     },
     {
-      "id": 79,
+      "id": 70,
       "name": "Ультрамарафон «Джейрах 8»",
       "date": "2026-09-26",
       "city": "Армхи",
@@ -1054,7 +934,7 @@
       "url": "https://marathonec.ru/marathon-dzheirah/"
     },
     {
-      "id": 80,
+      "id": 71,
       "name": "Владивостокский международный марафон 2026",
       "date": "2026-09-26",
       "city": "Владивосток",
@@ -1070,7 +950,7 @@
       "url": "https://marathonec.ru/vladivostok-marafon-gid/"
     },
     {
-      "id": 81,
+      "id": 72,
       "name": "Московский марафон 2026",
       "date": "2026-09-26",
       "city": "Москва",
@@ -1082,7 +962,7 @@
       "url": "https://marathonec.ru/moskovsky-marafon-gid/"
     },
     {
-      "id": 82,
+      "id": 73,
       "name": "Велесова Ночь Трейл",
       "date": "2026-09-26",
       "city": "Липецк",
@@ -1096,7 +976,7 @@
       "url": "https://reg.russiarunning.com/event/skazka26#new_tab"
     },
     {
-      "id": 83,
+      "id": 74,
       "name": "Hero League Trail ночь",
       "date": "2026-09-26",
       "city": "7 км",
@@ -1107,7 +987,7 @@
       "url": "https://reg.russiarunning.com/event/HeroLeagueTrailnoch#new_tab"
     },
     {
-      "id": 84,
+      "id": 75,
       "name": "Ультрамарафон «Королева спорта»",
       "date": "2026-09-26",
       "city": "Нижний Новгород",
@@ -1119,7 +999,7 @@
       "url": "https://reg.russiarunning.com/event/HeroLeagueTrailnoch#new_tab"
     },
     {
-      "id": 85,
+      "id": 76,
       "name": "Международный Балтийский Марафон «Андрей Первозванный»",
       "date": "2026-09-27",
       "city": "Санкт-Петербург",
@@ -1134,7 +1014,7 @@
       "url": "https://reg.russiarunning.com/event/BalticOrden2026#new_tab"
     },
     {
-      "id": 86,
+      "id": 77,
       "name": "City Trail 5 Izmailovo",
       "date": "2026-09-27",
       "city": "Москва",
@@ -1148,7 +1028,7 @@
       "url": "https://city-trail.ru/5#new_tab"
     },
     {
-      "id": 87,
+      "id": 78,
       "name": "Донской марафон",
       "date": "2026-09-27",
       "city": "Ростов-на-Дону",
@@ -1162,7 +1042,7 @@
       "url": "https://reg.russiarunning.com/event/Donskoymarafon2026#new_tab"
     },
     {
-      "id": 88,
+      "id": 79,
       "name": "Кросс в Петергофе – осенний этап",
       "date": "2026-09-27",
       "city": "Петергоф",
@@ -1175,7 +1055,7 @@
       "url": "https://peterhof.run/#new_tab"
     },
     {
-      "id": 89,
+      "id": 80,
       "name": "Hero League Trail день",
       "date": "2026-09-27",
       "city": "Нижний Новгород",
@@ -1187,7 +1067,7 @@
       "url": "https://reg.russiarunning.com/event/HeroLeagueTrailden#new_tab"
     },
     {
-      "id": 90,
+      "id": 81,
       "name": "White Bride Ultra Gelendzhik",
       "date": "2026-10-02",
       "city": "Геленджик",
@@ -1202,7 +1082,7 @@
       "url": "https://goldenultra.ru/wbu/#new_tab"
     },
     {
-      "id": 91,
+      "id": 82,
       "name": "Новотроицкий полумарафон",
       "date": "2026-10-03",
       "city": "Новотроицк",
@@ -1215,7 +1095,7 @@
       "url": "https://reg.russiarunning.com/event/NOVOTROITsKIYPOLUMARAFON2026#new_tab"
     },
     {
-      "id": 92,
+      "id": 83,
       "name": "Марафон «Путь к роднику»",
       "date": "2026-10-03",
       "city": "Слюдорудник",
@@ -1228,7 +1108,7 @@
       "url": "https://myrace.info/events/1540#new_tab"
     },
     {
-      "id": 93,
+      "id": 84,
       "name": "KultaKarjala",
       "date": "2026-10-03",
       "city": "Петрозаводск",
@@ -1241,7 +1121,7 @@
       "url": "https://reg.russiarunning.com/event/KULTAKARJALA2026#new_tab"
     },
     {
-      "id": 94,
+      "id": 85,
       "name": "Осенний кросс «Быстрый пёс»",
       "date": "2026-10-03",
       "city": "2 км",
@@ -1252,7 +1132,7 @@
       "url": "https://marathonec.ru/kross-bystry-pes-osen/"
     },
     {
-      "id": 95,
+      "id": 86,
       "name": "Кисловодский марафон Kavkaz.Run",
       "date": "2026-10-03",
       "city": "Кисловодск",
@@ -1267,7 +1147,7 @@
       "url": "https://reg.russiarunning.com/event/KislovodskiymarafonKAVKAZRUN2026#new_tab"
     },
     {
-      "id": 96,
+      "id": 87,
       "name": "Завидово трейл",
       "date": "2026-10-03",
       "city": "Завидово",
@@ -1281,7 +1161,7 @@
       "url": "https://reg.russiarunning.com/event/ZAVIDOVOTRAIL#new_tab"
     },
     {
-      "id": 97,
+      "id": 88,
       "name": "Трейл «Шарташ Карасики»",
       "date": "2026-10-03",
       "city": "Екатеринбург",
@@ -1293,7 +1173,7 @@
       "url": "https://reg.russiarunning.com/event/FestivalbegaShartashKarasiki27092026#new_tab"
     },
     {
-      "id": 98,
+      "id": 89,
       "name": "Полумарафон «Моя столица» 2026",
       "date": "2026-10-03",
       "city": "Москва",
@@ -1306,7 +1186,7 @@
       "url": "https://marathonec.ru/moya-stolica-polumarafon-gid/"
     },
     {
-      "id": 99,
+      "id": 90,
       "name": "Хехцир Трейл «Золотая осень»",
       "date": "2026-10-03",
       "city": "Хабаровск",
@@ -1320,7 +1200,7 @@
       "url": "https://trail27.ru/#new_tab"
     },
     {
-      "id": 100,
+      "id": 91,
       "name": "Фонарный забег",
       "date": "2026-10-03",
       "city": "10 км",
@@ -1331,7 +1211,7 @@
       "url": "https://zeppelinrun.ru/fonarny-zabeg?ysclid=mrnwzxsqaw875265498#rec2328550151#new_tab"
     },
     {
-      "id": 101,
+      "id": 92,
       "name": "«Золотая параллель»",
       "date": "2026-10-03",
       "city": "Армавир",
@@ -1343,7 +1223,7 @@
       "url": "https://reg.russiarunning.com/event/gold_parallel#new_tab"
     },
     {
-      "id": 102,
+      "id": 93,
       "name": "Горный трейл «Зигитяк»",
       "date": "2026-10-03",
       "city": "Зигитяк",
@@ -1355,7 +1235,7 @@
       "url": "https://reg.russiarunning.com/event/ZigityakMountainTrailChampionship2026#new_tab"
     },
     {
-      "id": 103,
+      "id": 94,
       "name": "Осенний кросс «Лисья гора»",
       "date": "2026-10-04",
       "city": "Москва",
@@ -1369,7 +1249,7 @@
       "url": "https://marathonec.ru/kross-lisya-gora-osen/"
     },
     {
-      "id": 104,
+      "id": 95,
       "name": "Покровский полумарафон",
       "date": "2026-10-04",
       "city": "Покровское",
@@ -1382,7 +1262,7 @@
       "url": "https://vk.com/away.php?to=https%3A%2F%2Fvologdamarafon.ru%2Fmarafon%2Fpokrovskij-polumarafon%2Fregistraciya%2F&#038;utf=1#new_tab"
     },
     {
-      "id": 105,
+      "id": 96,
       "name": "Бородино Трейл",
       "date": "2026-10-04",
       "city": "Бородино",
@@ -1396,7 +1276,7 @@
       "url": "https://reg.russiarunning.com/event/BORODINOTRAIL3#new_tab"
     },
     {
-      "id": 106,
+      "id": 97,
       "name": "Осенний Павловский забег",
       "date": "2026-10-04",
       "city": "Павловск",
@@ -1409,7 +1289,7 @@
       "url": "https://reg.russiarunning.com/event/OsenniyPavlovskiyzabeg2026#new_tab"
     },
     {
-      "id": 107,
+      "id": 98,
       "name": "«Воронки трейл»",
       "date": "2026-10-04",
       "city": "Уфа",
@@ -1422,7 +1302,7 @@
       "url": "https://reg.russiarunning.com/event/VORONKITREYL2026#new_tab"
     },
     {
-      "id": 108,
+      "id": 99,
       "name": "Забег «Этноран» в Калмыкии",
       "date": "2026-10-04",
       "city": "Элиста",
@@ -1435,7 +1315,7 @@
       "url": "https://reg.russiarunning.com/event/ZabegEtnoranRespublikaKalmykiya2026#new_tab"
     },
     {
-      "id": 109,
+      "id": 100,
       "name": "Hard Trail Sand",
       "date": "2026-10-04",
       "city": "Семиозерье",
@@ -1448,7 +1328,7 @@
       "url": "https://hardadventure.ru/sand2026#new_tab"
     },
     {
-      "id": 110,
+      "id": 101,
       "name": "Есенинский пробег",
       "date": "2026-10-10",
       "city": "21 км",
@@ -1459,7 +1339,7 @@
       "url": "https://reg.russiarunning.com/event/ESENINBEG26#new_tab"
     },
     {
-      "id": 111,
+      "id": 102,
       "name": "Яблочный трейл",
       "date": "2026-10-10",
       "city": "Грушевка",
@@ -1474,7 +1354,7 @@
       "url": "https://reg.russiarunning.com/event/YablochnyyTreyl2026#new_tab"
     },
     {
-      "id": 112,
+      "id": 103,
       "name": "Казанский национальный полумарафон 2026",
       "date": "2026-10-10",
       "city": "Казань",
@@ -1488,7 +1368,7 @@
       "url": "https://marathonec.ru/kazanski-nacionalny-polumarafon-gid/"
     },
     {
-      "id": 113,
+      "id": 104,
       "name": "Благотворительный забег «Вместе против инсульта»",
       "date": "2026-10-10",
       "city": "Москва",
@@ -1501,7 +1381,7 @@
       "url": "https://reg.russiarunning.com/event/ORBI26#new_tab"
     },
     {
-      "id": 114,
+      "id": 105,
       "name": "Осенний трейл «Первоуральск Опен»",
       "date": "2026-10-10",
       "city": "Первоуральск",
@@ -1515,7 +1395,7 @@
       "url": "https://reg.russiarunning.com/event/PervouralskOpen2026Osen#new_tab"
     },
     {
-      "id": 115,
+      "id": 106,
       "name": "Трейл «Туман»",
       "date": "2026-10-10",
       "city": "Фрязино",
@@ -1528,7 +1408,7 @@
       "url": "https://reg.place/?q%5Btag%5D=OB#new_tab"
     },
     {
-      "id": 116,
+      "id": 107,
       "name": "Space Half Marathon",
       "date": "2026-10-10",
       "city": "Королев",
@@ -1541,7 +1421,7 @@
       "url": "https://reg.russiarunning.com/event/spacehalf2026#new_tab"
     },
     {
-      "id": 117,
+      "id": 108,
       "name": "Кросс «Высота 102»",
       "date": "2026-10-10",
       "city": "6 км",
@@ -1552,7 +1432,7 @@
       "url": "https://reg.russiarunning.com/event/KrossVysota102#new_tab"
     },
     {
-      "id": 118,
+      "id": 109,
       "name": "Полумарафон «Жемчужина Золотого Кольца»",
       "date": "2026-10-11",
       "city": "Суздаль",
@@ -1566,7 +1446,7 @@
       "url": "https://reg.russiarunning.com/event/SuzdalskiypolumarafonZhemchuzhinaZolotogokoltsa2026#new_tab"
     },
     {
-      "id": 119,
+      "id": 110,
       "name": "Вьюнок Трейл",
       "date": "2026-10-11",
       "city": "Гарболово",
@@ -1580,7 +1460,7 @@
       "url": "https://reg.russiarunning.com/event/vyunok26#new_tab"
     },
     {
-      "id": 120,
+      "id": 111,
       "name": "Осенний трейл «Краски леса»",
       "date": "2026-10-11",
       "city": "Ступино",
@@ -1593,7 +1473,7 @@
       "url": "https://reg.russiarunning.com/event/TREYLKRASKILESA2026#new_tab"
     },
     {
-      "id": 121,
+      "id": 112,
       "name": "Сормовский осенний пробег имени Г. П. Терентьева",
       "date": "2026-10-11",
       "city": "Нижний Новгород",
@@ -1606,7 +1486,7 @@
       "url": "https://reg.russiarunning.com/event/SORMOVSKIYOSENNIYPROBEG2026#new_tab"
     },
     {
-      "id": 122,
+      "id": 113,
       "name": "Эстафета 5х4,2 км Осень",
       "date": "2026-10-11",
       "city": "4.2 км",
@@ -1617,7 +1497,7 @@
       "url": "https://reg.russiarunning.com/event/rla2026#new_tab"
     },
     {
-      "id": 123,
+      "id": 114,
       "name": "Саратовский марафон",
       "date": "2026-10-11",
       "city": "Саратов",
@@ -1631,7 +1511,7 @@
       "url": "https://myrace.info/events/1708#new_tab"
     },
     {
-      "id": 124,
+      "id": 115,
       "name": "О-Трейл Феррум Фест",
       "date": "2026-10-17",
       "city": "Железноводск",
@@ -1646,7 +1526,7 @@
       "url": "https://marathonec.ru/o-trail-ferrum/"
     },
     {
-      "id": 125,
+      "id": 116,
       "name": "Шекснинский полумарафон",
       "date": "2026-10-17",
       "city": "Шексна",
@@ -1660,7 +1540,7 @@
       "url": "https://vk.com/away.php?to=https%3A%2F%2Fvologdamarafon.ru%2Fmarafon%2F%25D1%2588%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BD%25D0%25B8%25D0%25BD%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9-%25D0%25BF%25D0%25BE%25D0%25BB%25D1%2583%25D0%25BC%25D0%25B0%25D1%2580%25D0%25B0%25D1%2584%25D0%25BE%25D0%25BD%2F%25D1%2580%25D0%25B5%25D0%25B3%25D0%25B8%25D1%2581%25D1%2582%25D1%2580%25D0%25B0%25D1%2586%25D0%25B8%25D1%258F%2F&#038;utf=1#new_tab"
     },
     {
-      "id": 126,
+      "id": 117,
       "name": "Городская ультра «Уфимское ожерелье». 3 этап",
       "date": "2026-10-17",
       "city": "Уфа",
@@ -1673,7 +1553,7 @@
       "url": "https://reg.russiarunning.com/event/ufacityultra20263#new_tab"
     },
     {
-      "id": 127,
+      "id": 118,
       "name": "Юрманка трейл",
       "date": "2026-10-17",
       "city": "Верх-Ики",
@@ -1687,7 +1567,7 @@
       "url": "https://sportsauce.ru/starts/yurmanka-trejl-309#new_tab"
     },
     {
-      "id": 128,
+      "id": 119,
       "name": "Знаменский забег",
       "date": "2026-10-17",
       "city": "Санкт-Петербург",
@@ -1700,7 +1580,7 @@
       "url": "https://reg.russiarunning.com/event/Znamenkarun#new_tab"
     },
     {
-      "id": 129,
+      "id": 120,
       "name": "Часовой забег «Осенний вальс»",
       "date": "2026-10-18",
       "city": "1 час",
@@ -1711,7 +1591,7 @@
       "url": "https://reg.russiarunning.com/event/ZABEGOSENNIYVALS202618102026#new_tab"
     },
     {
-      "id": 130,
+      "id": 121,
       "name": "Трейл «Лесобег осень»",
       "date": "2026-10-18",
       "city": "Липецк",
@@ -1724,7 +1604,7 @@
       "url": "https://reg.russiarunning.com/event/LesobegOSEN18102026#new_tab"
     },
     {
-      "id": 131,
+      "id": 122,
       "name": "Забег «Покровское-Стрешнево»",
       "date": "2026-10-18",
       "city": "Москва",
@@ -1743,7 +1623,7 @@
       "url": "https://reg.russiarunning.com/event/PokrovskoeStreshnevo2#new_tab"
     },
     {
-      "id": 132,
+      "id": 123,
       "name": "Трейл «Рубеж»",
       "date": "2026-10-24",
       "city": "Ильинское",
@@ -1757,7 +1637,7 @@
       "url": "https://xn--40-emcadbfdgn.xn--p1ai/events/162#new_tab"
     },
     {
-      "id": 133,
+      "id": 124,
       "name": "«Арена марафон» 2026",
       "date": "2026-10-24",
       "city": "Санкт-Петербург",
@@ -1771,7 +1651,7 @@
       "url": "https://marathonec.ru/arena-marafon-gid/"
     },
     {
-      "id": 134,
+      "id": 125,
       "name": "Трейл «Окская тропа» – ночной забег",
       "date": "2026-10-24",
       "city": "Нижний Новгород",
@@ -1783,7 +1663,7 @@
       "url": "https://reg.russiarunning.com/event/NochOkaTrail2026#new_tab"
     },
     {
-      "id": 135,
+      "id": 126,
       "name": "НеЗаповедные тропы",
       "date": "2026-10-24",
       "city": "Красноярск",
@@ -1796,7 +1676,7 @@
       "url": "https://www.toplist.run/race/12592#new_tab"
     },
     {
-      "id": 136,
+      "id": 127,
       "name": "Трейл «Окская тропа» – дневной забег",
       "date": "2026-10-25",
       "city": "Нижний Новгород",
@@ -1811,7 +1691,7 @@
       "url": "https://reg.russiarunning.com/event/treylOkskayatropa2026dnevnoyzabeg#new_tab"
     },
     {
-      "id": 137,
+      "id": 128,
       "name": "Железноводск Ultra Trail",
       "date": "2026-10-30",
       "city": "Железноводск",
@@ -1826,7 +1706,7 @@
       "url": "https://reg.place/events/ultra-trail-2026/#new_tab"
     },
     {
-      "id": 138,
+      "id": 129,
       "name": "Марафон «Мучкап – Шапкино – Любо»",
       "date": "2026-10-31",
       "city": "Мучкапский",
@@ -1839,7 +1719,7 @@
       "url": "https://reg.russiarunning.com/event/MARAFONMUChKAPShAPKINOLYuBO2026#new_tab"
     },
     {
-      "id": 139,
+      "id": 130,
       "name": "Полумарафон «Русский Север»",
       "date": "2026-10-31",
       "city": "Кириллов",
@@ -1853,7 +1733,7 @@
       "url": "https://reg.russiarunning.com/event/IIIpolumarafonRusskiySever#new_tab"
     },
     {
-      "id": 140,
+      "id": 131,
       "name": "Сочи марафон 2026",
       "date": "2026-10-31",
       "city": "Сочи",
@@ -1868,7 +1748,7 @@
       "url": "https://marathonec.ru/sochi-marafon-gid/"
     },
     {
-      "id": 141,
+      "id": 132,
       "name": "O-Trail Karras",
       "date": "2026-10-31",
       "city": "Железноводск",
@@ -1880,7 +1760,7 @@
       "url": "https://reg.russiarunning.com/event/OTRAILKarras2026"
     },
     {
-      "id": 142,
+      "id": 133,
       "name": "City Trail 6 X-Race",
       "date": "2026-11-01",
       "city": "Красногорск",
@@ -1894,7 +1774,7 @@
       "url": "https://city-trail.ru/6#new_tab"
     },
     {
-      "id": 143,
+      "id": 134,
       "name": "Благотворительный забег «8 городов. Москва»",
       "date": "2026-11-01",
       "city": "Москва",
@@ -1908,7 +1788,7 @@
       "url": "https://reg.russiarunning.com/event/8gorodovMoskva#new_tab"
     },
     {
-      "id": 144,
+      "id": 135,
       "name": "Народный трейл",
       "date": "2026-11-04",
       "city": "Истра",
@@ -1921,7 +1801,7 @@
       "url": "https://istra.run/narod#rec773672918#new_tab"
     },
     {
-      "id": 145,
+      "id": 136,
       "name": "Трейл «По тропам предков»",
       "date": "2026-11-07",
       "city": "12 км",
@@ -1932,7 +1812,7 @@
       "url": "https://reg.russiarunning.com/event/ZabegpoperesechennoymestnostiPotropampredkov1#new_tab"
     },
     {
-      "id": 146,
+      "id": 137,
       "name": "Трейлфест «МинВоды»",
       "date": "2026-11-07",
       "city": "Минеральные Воды",
@@ -1944,7 +1824,7 @@
       "url": "https://reg.russiarunning.com/event/TreylfestZmeyka2026#new_tab"
     },
     {
-      "id": 147,
+      "id": 138,
       "name": "Гатчинский полумарафон 2026",
       "date": "2026-11-08",
       "city": "Гатчина",
@@ -1957,7 +1837,7 @@
       "url": "https://marathonec.ru/gatchinskij-polumarafon-gid/"
     },
     {
-      "id": 148,
+      "id": 139,
       "name": "Забег «Марьинская Стрела»",
       "date": "2026-11-08",
       "city": "Москва",
@@ -1976,7 +1856,7 @@
       "url": "https://reg.russiarunning.com/event/ZabegpolumarafonMarinskayaStrela12#new_tab"
     },
     {
-      "id": 149,
+      "id": 140,
       "name": "Осенний марафон «Орден белого орла»",
       "date": "2026-11-08",
       "city": "Санкт-Петербург",
@@ -1991,7 +1871,7 @@
       "url": "https://reg.russiarunning.com/event/AutumnOrden2026#new_tab"
     },
     {
-      "id": 150,
+      "id": 141,
       "name": "Трейл «Буря»",
       "date": "2026-11-15",
       "city": "Красногорск",
@@ -2004,7 +1884,7 @@
       "url": "https://marathonec.ru/trail-burya/"
     },
     {
-      "id": 151,
+      "id": 142,
       "name": "Крымский марафон",
       "date": "2026-11-15",
       "city": "Симферополь",
@@ -2018,7 +1898,7 @@
       "url": "https://reg.russiarunning.com/event/KrymskiyMarafon2026#new_tab"
     },
     {
-      "id": 152,
+      "id": 143,
       "name": "Погоня за Лисой",
       "date": "2026-11-28",
       "city": "Красноярск",
@@ -2030,7 +1910,7 @@
       "url": "https://toplist.run/race/11313#new_tab"
     },
     {
-      "id": 153,
+      "id": 144,
       "name": "Иммерсивный Жуков трейл",
       "date": "2026-11-28",
       "city": "Стрелковка",
@@ -2042,7 +1922,7 @@
       "url": "https://xn--40-emcadbfdgn.xn--p1ai/events/161#new_tab"
     },
     {
-      "id": 154,
+      "id": 145,
       "name": "Зимний полумарафон «Европа-Азия»",
       "date": "2026-12-06",
       "city": "Екатеринбург",
@@ -2054,7 +1934,7 @@
       "url": "https://marathonec.ru/zimny-polumarathon-evropa-aziya/"
     },
     {
-      "id": 155,
+      "id": 146,
       "name": "Полумарафон «Бегущая Вологда»",
       "date": "2026-12-06",
       "city": "Вологда",
@@ -2068,7 +1948,7 @@
       "url": "https://reg.russiarunning.com/event/IXpolumarafonBV#new_tab"
     },
     {
-      "id": 156,
+      "id": 147,
       "name": "Новогодний марафон Sosnovka Goat",
       "date": "2026-12-13",
       "city": "Санкт-Петербург",
@@ -2083,7 +1963,7 @@
       "url": "https://reg.russiarunning.com/event/SosnovkaGoat#new_tab"
     },
     {
-      "id": 157,
+      "id": 148,
       "name": "Трейл «Горячий шоколад»",
       "date": "2026-12-13",
       "city": "Горячий Ключ",
@@ -2096,7 +1976,7 @@
       "url": "https://reg.russiarunning.com/event/TreylpolumarafonGoryachiyshokolad2026#new_tab"
     },
     {
-      "id": 158,
+      "id": 149,
       "name": "Mad Fox Ultra 2026",
       "date": "2026-12-18",
       "city": "Переславль-Залесский",
@@ -2112,7 +1992,7 @@
       "url": "https://marathonec.ru/mad-fox-ultra-2026/"
     },
     {
-      "id": 159,
+      "id": 150,
       "name": "Новогодний хоровод",
       "date": "2026-12-31",
       "city": "5 км",
@@ -2123,7 +2003,7 @@
       "url": "https://xn--40-emcadbfdgn.xn--p1ai/events/169#new_tab"
     },
     {
-      "id": 160,
+      "id": 151,
       "name": "Крымский Зимний Ультра Трейл",
       "date": "2027-01-05",
       "city": "Бахчисарай",
@@ -2138,7 +2018,7 @@
       "url": "https://reg.russiarunning.com/event/cwut27#new_tab"
     },
     {
-      "id": 161,
+      "id": 152,
       "name": "Международный трейловый забег Lake Ice Race",
       "date": "2027-01-23",
       "city": "Миасс",
@@ -2151,7 +2031,7 @@
       "url": "https://marathonec.ru/lake-ice-race/"
     },
     {
-      "id": 162,
+      "id": 153,
       "name": "Vottovaara Mountain Race",
       "date": "2027-09-04",
       "city": "Гимолы",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T09:28:49.261Z",
+  "updated": "2026-10-30T09:41:29.634Z",
   "count": 156,
   "sources": {
     "marathonec": 103,
@@ -507,483 +507,6 @@
     },
     {
       "id": 39,
-      "name": "15.11.2026 SU :: Закрытие бегового сезона 2026",
-      "date": "2026-11-15",
-      "city": "SUЗакрытие бегового сезона 2026",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/26348"
-    },
-    {
-      "id": 40,
-      "name": "НОЧНОЙ ТРЕЙЛ - HARD TRAIL | NIGHT",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/26033"
-    },
-    {
-      "id": 41,
-      "name": "Народный Трейл",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/26100"
-    },
-    {
-      "id": 42,
-      "name": "Ночной трейл Бег & Байк",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/26113"
-    },
-    {
-      "id": 43,
-      "name": "Закрытие бегового сезона 2026",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/26348"
-    },
-    {
-      "id": 44,
-      "name": "Кубок GRAVITY 2026-2027",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/26485"
-    },
-    {
-      "id": 45,
-      "name": "1 этап Кубка GRAVITY",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/26486"
-    },
-    {
-      "id": 46,
-      "name": "ЗАБЕГ В СОСНОВКЕ 2026 СПОРТ ДРАЙВ",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/26655"
-    },
-    {
-      "id": 47,
-      "name": "Борзые_трейлы|Зима / borzye_trails|Winter",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/26221"
-    },
-    {
-      "id": 48,
-      "name": "2 этап Кубка GRAVITY",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/26487"
-    },
-    {
-      "id": 49,
-      "name": "Пробег \"Новогодняя сказка\"",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/26349"
-    },
-    {
-      "id": 50,
-      "name": "Лыжная гонка ПЕРВЫЙ СНЕГ 2026",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/26666"
-    },
-    {
-      "id": 51,
-      "name": "[ПЕРЕНОС НА 31.12.2026] Новогодняя Лахта Марафон",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/24626"
-    },
-    {
-      "id": 52,
-      "name": "Областные соревнования среди обучающихся \"Приз зимних каникул\"",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27065"
-    },
-    {
-      "id": 53,
-      "name": "Областные спортивные соревнования «Олимпийские надежды» (13.01-14.01)",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27066"
-    },
-    {
-      "id": 54,
-      "name": "Лыжная гонка Прорыв 2027",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27063"
-    },
-    {
-      "id": 55,
-      "name": "3 этап Кубка GRAVITY",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27006"
-    },
-    {
-      "id": 56,
-      "name": "ЗАБЕГ В МОСКОВСКОМ ПАРКЕ ПОБЕДЫ СПОРТ ДРАЙВ",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27040"
-    },
-    {
-      "id": 57,
-      "name": "Карельский лыжный марафон (СВ)",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27031"
-    },
-    {
-      "id": 58,
-      "name": "Карельский лыжный марафон (КЛ)",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27032"
-    },
-    {
-      "id": 59,
-      "name": "Лыжный марафон “Орехово Ски 2027”",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27064"
-    },
-    {
-      "id": 60,
-      "name": "Лыжная гонка \"Альпинистский лыжный марафон\" (СВ)",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27010"
-    },
-    {
-      "id": 61,
-      "name": "Карельский лыжный марафон Дети",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27033"
-    },
-    {
-      "id": 62,
-      "name": "Онежская ледовая ультра",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27001"
-    },
-    {
-      "id": 63,
-      "name": "ЗАБЕГ В ЮЖНО-ПРИМОРСКОМ ПАРКЕ СПОРТ ДРАЙВ",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27041"
-    },
-    {
-      "id": 64,
-      "name": "Кавголовский марафон",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27058"
-    },
-    {
-      "id": 65,
-      "name": "4 этап Кубка GRAVITY",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27007"
-    },
-    {
-      "id": 66,
-      "name": "ЗАБЕГ В ПАРКЕ ГЕРОЕВ-ПОЖАРНЫХ СПОРТ ДРАЙВ",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27042"
-    },
-    {
-      "id": 67,
-      "name": "Забег «Соколиная гора»",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27021"
-    },
-    {
-      "id": 68,
-      "name": "ЗАБЕГ В ОТДЕЛЬНОМ ПАРКЕ СПОРТ ДРАЙВ",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27043"
-    },
-    {
-      "id": 69,
-      "name": "NORDMAN Псковский Марафон 2027",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27005"
-    },
-    {
-      "id": 70,
-      "name": "КУБОК ВЕЛОМАРАФОНОВ СПОРТ ДРАЙВ",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27051"
-    },
-    {
-      "id": 71,
-      "name": "ВЕЛОМАРАФОН В ОРЕХОВО 2027",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27052"
-    },
-    {
-      "id": 72,
-      "name": "СПБ БЭКЪЯРД УЛЬТРА 2027",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27034"
-    },
-    {
-      "id": 73,
-      "name": "ЗАБЕГ БОЛЬШАЯ НЕВКА СПОРТ ДРАЙВ",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27044"
-    },
-    {
-      "id": 74,
-      "name": "Петрозаводский «бесконечный» забег",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27013"
-    },
-    {
-      "id": 75,
-      "name": "ПАСТЕРСКИЙ ВЕЛОМАРАФОН 2027",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27053"
-    },
-    {
-      "id": 76,
-      "name": "ЗАБЕГ В СЕСТРОРЕЦКЕ СПОРТ ДРАЙВ",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27045"
-    },
-    {
-      "id": 77,
-      "name": "БУТ БИОТРОПИКА УЛЬТРА | BIOTROPIKA SOLO MODE",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27008"
-    },
-    {
-      "id": 78,
-      "name": "ОХТИНСКИЙ ВЕЛОМАРАФОН 2027",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27054"
-    },
-    {
-      "id": 79,
-      "name": "STONEMAN 515",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/26175"
-    },
-    {
-      "id": 80,
-      "name": "КРОСС-КАНТРИ ТРИАТЛОН В ОРЕХОВО 2027",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27059"
-    },
-    {
-      "id": 81,
-      "name": "ЗАБЕГ НА КРЕСТОВСКОМ СПОРТ ДРАЙВ",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27046"
-    },
-    {
-      "id": 82,
-      "name": "ВЕЛОМАРАФОН В КОМАРОВО 2027",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27055"
-    },
-    {
-      "id": 83,
-      "name": "Мста Трейл",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27011"
-    },
-    {
-      "id": 84,
-      "name": "ВЕЛОМАРАФОН В СОСНОВО 2027",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27056"
-    },
-    {
-      "id": 85,
-      "name": "Бэкъярд Биотропика Сибирь",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27012"
-    },
-    {
-      "id": 86,
-      "name": "Бэкъярд УльтраИстра",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27028"
-    },
-    {
-      "id": 87,
-      "name": "ЗАБЕГ СТРЕЛЬНА САНКТ-ПЕТЕРБУРГ СПОРТ ДРАЙВ",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27047"
-    },
-    {
-      "id": 88,
-      "name": "ЗАБЕГ СМОЛЬНАЯ НАБЕРЕЖНАЯ СПОРТ ДРАЙВ",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27048"
-    },
-    {
-      "id": 89,
-      "name": "ВЕЛОМАРАФОН В ЛЕМБОЛОВО 2027",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27057"
-    },
-    {
-      "id": 90,
-      "name": "ЗАБЕГ ОГНИ ЗАЛИВА СПОРТ ДРАЙВ",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27049"
-    },
-    {
-      "id": 91,
-      "name": "ЗАБЕГ В ПАРКЕ АЛЕКСАНДРИНО СПОРТ ДРАЙВ",
-      "date": "2026-11-15",
-      "city": "Россия",
-      "distances": [],
-      "source": "o-time",
-      "url": "https://reg.o-time.ru/race/27050"
-    },
-    {
-      "id": 92,
       "name": "Трейл «Беги»",
       "date": "2026-11-20",
       "city": "10 км",
@@ -994,7 +517,7 @@
       "url": "https://reg.russiarunning.com/event/marathonRUN#new_tab"
     },
     {
-      "id": 93,
+      "id": 40,
       "name": "Полумарафон «Огни Дербента»",
       "date": "2026-11-21",
       "city": "Дербент",
@@ -1007,7 +530,7 @@
       "url": "https://marathonec.ru/ogni-derbenta/"
     },
     {
-      "id": 94,
+      "id": 41,
       "name": "Трейл «НеЗаповедные тропы»",
       "date": "2026-11-21",
       "city": "Красноярск",
@@ -1020,7 +543,7 @@
       "url": "https://www.toplist.run/race/12592#new_tab"
     },
     {
-      "id": 95,
+      "id": 42,
       "name": "Карачун Race Backyard Ultra",
       "date": "2026-11-21",
       "city": "6.7 км",
@@ -1031,7 +554,7 @@
       "url": "https://toplist.run/race/karachun-race-backyard-ultra-2026#new_tab"
     },
     {
-      "id": 96,
+      "id": 43,
       "name": "Трейл  «Помедвежим»",
       "date": "2026-11-22",
       "city": "Черноморское",
@@ -1045,7 +568,7 @@
       "url": "https://toplist.run/race/treil-pomedvezhim-2026#new_tab"
     },
     {
-      "id": 97,
+      "id": 44,
       "name": "Погоня за Лисой",
       "date": "2026-11-28",
       "city": "Красноярск",
@@ -1057,7 +580,7 @@
       "url": "https://toplist.run/race/11313#new_tab"
     },
     {
-      "id": 98,
+      "id": 45,
       "name": "Иммерсивный Жуков трейл",
       "date": "2026-11-28",
       "city": "Стрелковка",
@@ -1069,7 +592,7 @@
       "url": "https://xn--40-emcadbfdgn.xn--p1ai/events/161#new_tab"
     },
     {
-      "id": 99,
+      "id": 46,
       "name": "Ночной трейл «Шурале»",
       "date": "2026-11-28",
       "city": "Альметьевск",
@@ -1081,7 +604,7 @@
       "url": "https://toplist.run/race/nochnoi-treil-shurale-2026#new_tab"
     },
     {
-      "id": 100,
+      "id": 47,
       "name": "Осень-зима trail",
       "date": "2026-11-29",
       "city": "Мирный",
@@ -1093,7 +616,7 @@
       "url": "https://toplist.run/race/osen-zima-trail-2026#new_tab"
     },
     {
-      "id": 101,
+      "id": 48,
       "name": "Уссури-трейл. Зима",
       "date": "2026-12-05",
       "city": "Уссурийск",
@@ -1106,7 +629,7 @@
       "url": "https://toplist.run/race/ussuri-treil-zima-2026#new_tab"
     },
     {
-      "id": 102,
+      "id": 49,
       "name": "Ночной трейловый забег «Светлая ночь»",
       "date": "2026-12-05",
       "city": "Кварса",
@@ -1119,7 +642,7 @@
       "url": "https://reg.russiarunning.com/event/Svetlaynoch2026#new_tab"
     },
     {
-      "id": 103,
+      "id": 50,
       "name": "Трейл «Снежинка»",
       "date": "2026-12-05",
       "city": "Берёзовский",
@@ -1132,7 +655,7 @@
       "url": "https://toplist.run/race/treilovyi-zimnii-zabeg-snezhinka-2026#new_tab"
     },
     {
-      "id": 104,
+      "id": 51,
       "name": "Monahi Night Trail",
       "date": "2026-12-05",
       "city": "Челябинск",
@@ -1144,7 +667,7 @@
       "url": "https://toplist.run/race/monahi-night-trail-2026#new_tab"
     },
     {
-      "id": 105,
+      "id": 52,
       "name": "Зимний полумарафон «Европа-Азия»",
       "date": "2026-12-06",
       "city": "Екатеринбург",
@@ -1156,7 +679,7 @@
       "url": "https://marathonec.ru/zimny-polumarathon-evropa-aziya/"
     },
     {
-      "id": 106,
+      "id": 53,
       "name": "Полумарафон «Бегущая Вологда»",
       "date": "2026-12-06",
       "city": "Вологда",
@@ -1170,7 +693,7 @@
       "url": "https://reg.russiarunning.com/event/IXpolumarafonBV#new_tab"
     },
     {
-      "id": 107,
+      "id": 54,
       "name": "Зимний забег с гандикапом «Снежная семёрка»",
       "date": "2026-12-06",
       "city": "Красноярск",
@@ -1182,7 +705,7 @@
       "url": "https://toplist.run/race/snezhnaya-semerka-2026#new_tab"
     },
     {
-      "id": 108,
+      "id": 55,
       "name": "Кодзыд поль Трейл",
       "date": "2026-12-06",
       "city": "Сыктывкар",
@@ -1194,7 +717,7 @@
       "url": "https://orgeo.ru/event/info/54917#new_tab"
     },
     {
-      "id": 109,
+      "id": 56,
       "name": "Снежный забег",
       "date": "2026-12-06",
       "city": "Томск",
@@ -1206,7 +729,7 @@
       "url": "https://toplist.run/race/snezhnyi-zabeg-2026#new_tab"
     },
     {
-      "id": 110,
+      "id": 57,
       "name": "Новогодний марафон Sosnovka Goat",
       "date": "2026-12-13",
       "city": "Санкт-Петербург",
@@ -1221,7 +744,7 @@
       "url": "https://reg.russiarunning.com/event/SosnovkaGoat#new_tab"
     },
     {
-      "id": 111,
+      "id": 58,
       "name": "Трейл «Горячий шоколад»",
       "date": "2026-12-13",
       "city": "Горячий Ключ",
@@ -1234,7 +757,7 @@
       "url": "https://reg.russiarunning.com/event/TreylpolumarafonGoryachiyshokolad2026#new_tab"
     },
     {
-      "id": 112,
+      "id": 59,
       "name": "Mad Fox Ultra 2026",
       "date": "2026-12-18",
       "city": "Переславль-Залесский",
@@ -1250,7 +773,7 @@
       "url": "https://marathonec.ru/mad-fox-ultra-2026/"
     },
     {
-      "id": 113,
+      "id": 60,
       "name": "Новогодний хоровод",
       "date": "2026-12-31",
       "city": "5 км",
@@ -1261,7 +784,7 @@
       "url": "https://xn--40-emcadbfdgn.xn--p1ai/events/169#new_tab"
     },
     {
-      "id": 114,
+      "id": 61,
       "name": "Тульский зимний трейл",
       "date": "2027-01-05",
       "city": "Тула",
@@ -1273,7 +796,7 @@
       "url": "https://reg.russiarunning.com/event/TWT2027#new_tab"
     },
     {
-      "id": 115,
+      "id": 62,
       "name": "Крымский Зимний Ультра Трейл",
       "date": "2027-01-05",
       "city": "Бахчисарай",
@@ -1288,7 +811,7 @@
       "url": "https://reg.russiarunning.com/event/cwut27#new_tab"
     },
     {
-      "id": 116,
+      "id": 63,
       "name": "DagRun",
       "date": "2027-01-07",
       "city": "12 км",
@@ -1299,7 +822,7 @@
       "url": "https://reg.russiarunning.com/event/ZimniyzabegDAGRUN2027#new_tab"
     },
     {
-      "id": 117,
+      "id": 64,
       "name": "Международный трейловый забег Lake Ice Race",
       "date": "2027-01-23",
       "city": "Миасс",
@@ -1312,7 +835,7 @@
       "url": "https://marathonec.ru/lake-ice-race/"
     },
     {
-      "id": 118,
+      "id": 65,
       "name": "Глинтвейновый забег",
       "date": "2027-01-24",
       "city": "Санкт-Петербург",
@@ -1326,7 +849,7 @@
       "url": "https://myrace.info/events/2156#new_tab"
     },
     {
-      "id": 119,
+      "id": 66,
       "name": "Novgorod Ice",
       "date": "2027-02-13",
       "city": "Великий Новгород",
@@ -1337,6 +860,483 @@
       ],
       "source": "marathonec",
       "url": "https://marathonec.ru/novgorod-ice-2/"
+    },
+    {
+      "id": 67,
+      "name": "28.02.2027 SU :: Онежская ледовая ультра",
+      "date": "2027-02-28",
+      "city": "SUОнежская ледовая ультра",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27001"
+    },
+    {
+      "id": 68,
+      "name": "НОЧНОЙ ТРЕЙЛ - HARD TRAIL | NIGHT",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/26033"
+    },
+    {
+      "id": 69,
+      "name": "Народный Трейл",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/26100"
+    },
+    {
+      "id": 70,
+      "name": "Ночной трейл Бег & Байк",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/26113"
+    },
+    {
+      "id": 71,
+      "name": "Закрытие бегового сезона 2026",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/26348"
+    },
+    {
+      "id": 72,
+      "name": "Кубок GRAVITY 2026-2027",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/26485"
+    },
+    {
+      "id": 73,
+      "name": "1 этап Кубка GRAVITY",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/26486"
+    },
+    {
+      "id": 74,
+      "name": "ЗАБЕГ В СОСНОВКЕ 2026 СПОРТ ДРАЙВ",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/26655"
+    },
+    {
+      "id": 75,
+      "name": "Борзые_трейлы|Зима / borzye_trails|Winter",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/26221"
+    },
+    {
+      "id": 76,
+      "name": "2 этап Кубка GRAVITY",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/26487"
+    },
+    {
+      "id": 77,
+      "name": "Пробег \"Новогодняя сказка\"",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/26349"
+    },
+    {
+      "id": 78,
+      "name": "Лыжная гонка ПЕРВЫЙ СНЕГ 2026",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/26666"
+    },
+    {
+      "id": 79,
+      "name": "[ПЕРЕНОС НА 31.12.2026] Новогодняя Лахта Марафон",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/24626"
+    },
+    {
+      "id": 80,
+      "name": "Областные соревнования среди обучающихся \"Приз зимних каникул\"",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27065"
+    },
+    {
+      "id": 81,
+      "name": "Областные спортивные соревнования «Олимпийские надежды» (13.01-14.01)",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27066"
+    },
+    {
+      "id": 82,
+      "name": "Лыжная гонка Прорыв 2027",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27063"
+    },
+    {
+      "id": 83,
+      "name": "3 этап Кубка GRAVITY",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27006"
+    },
+    {
+      "id": 84,
+      "name": "ЗАБЕГ В МОСКОВСКОМ ПАРКЕ ПОБЕДЫ СПОРТ ДРАЙВ",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27040"
+    },
+    {
+      "id": 85,
+      "name": "Карельский лыжный марафон (СВ)",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27031"
+    },
+    {
+      "id": 86,
+      "name": "Карельский лыжный марафон (КЛ)",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27032"
+    },
+    {
+      "id": 87,
+      "name": "Лыжный марафон “Орехово Ски 2027”",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27064"
+    },
+    {
+      "id": 88,
+      "name": "Лыжная гонка \"Альпинистский лыжный марафон\" (СВ)",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27010"
+    },
+    {
+      "id": 89,
+      "name": "Карельский лыжный марафон Дети",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27033"
+    },
+    {
+      "id": 90,
+      "name": "Онежская ледовая ультра",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27001"
+    },
+    {
+      "id": 91,
+      "name": "ЗАБЕГ В ЮЖНО-ПРИМОРСКОМ ПАРКЕ СПОРТ ДРАЙВ",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27041"
+    },
+    {
+      "id": 92,
+      "name": "Кавголовский марафон",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27058"
+    },
+    {
+      "id": 93,
+      "name": "4 этап Кубка GRAVITY",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27007"
+    },
+    {
+      "id": 94,
+      "name": "ЗАБЕГ В ПАРКЕ ГЕРОЕВ-ПОЖАРНЫХ СПОРТ ДРАЙВ",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27042"
+    },
+    {
+      "id": 95,
+      "name": "Забег «Соколиная гора»",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27021"
+    },
+    {
+      "id": 96,
+      "name": "ЗАБЕГ В ОТДЕЛЬНОМ ПАРКЕ СПОРТ ДРАЙВ",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27043"
+    },
+    {
+      "id": 97,
+      "name": "NORDMAN Псковский Марафон 2027",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27005"
+    },
+    {
+      "id": 98,
+      "name": "КУБОК ВЕЛОМАРАФОНОВ СПОРТ ДРАЙВ",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27051"
+    },
+    {
+      "id": 99,
+      "name": "ВЕЛОМАРАФОН В ОРЕХОВО 2027",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27052"
+    },
+    {
+      "id": 100,
+      "name": "СПБ БЭКЪЯРД УЛЬТРА 2027",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27034"
+    },
+    {
+      "id": 101,
+      "name": "ЗАБЕГ БОЛЬШАЯ НЕВКА СПОРТ ДРАЙВ",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27044"
+    },
+    {
+      "id": 102,
+      "name": "Петрозаводский «бесконечный» забег",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27013"
+    },
+    {
+      "id": 103,
+      "name": "ПАСТЕРСКИЙ ВЕЛОМАРАФОН 2027",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27053"
+    },
+    {
+      "id": 104,
+      "name": "ЗАБЕГ В СЕСТРОРЕЦКЕ СПОРТ ДРАЙВ",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27045"
+    },
+    {
+      "id": 105,
+      "name": "БУТ БИОТРОПИКА УЛЬТРА | BIOTROPIKA SOLO MODE",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27008"
+    },
+    {
+      "id": 106,
+      "name": "ОХТИНСКИЙ ВЕЛОМАРАФОН 2027",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27054"
+    },
+    {
+      "id": 107,
+      "name": "STONEMAN 515",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/26175"
+    },
+    {
+      "id": 108,
+      "name": "КРОСС-КАНТРИ ТРИАТЛОН В ОРЕХОВО 2027",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27059"
+    },
+    {
+      "id": 109,
+      "name": "ЗАБЕГ НА КРЕСТОВСКОМ СПОРТ ДРАЙВ",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27046"
+    },
+    {
+      "id": 110,
+      "name": "ВЕЛОМАРАФОН В КОМАРОВО 2027",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27055"
+    },
+    {
+      "id": 111,
+      "name": "Мста Трейл",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27011"
+    },
+    {
+      "id": 112,
+      "name": "ВЕЛОМАРАФОН В СОСНОВО 2027",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27056"
+    },
+    {
+      "id": 113,
+      "name": "Бэкъярд Биотропика Сибирь",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27012"
+    },
+    {
+      "id": 114,
+      "name": "Бэкъярд УльтраИстра",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27028"
+    },
+    {
+      "id": 115,
+      "name": "ЗАБЕГ СТРЕЛЬНА САНКТ-ПЕТЕРБУРГ СПОРТ ДРАЙВ",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27047"
+    },
+    {
+      "id": 116,
+      "name": "ЗАБЕГ СМОЛЬНАЯ НАБЕРЕЖНАЯ СПОРТ ДРАЙВ",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27048"
+    },
+    {
+      "id": 117,
+      "name": "ВЕЛОМАРАФОН В ЛЕМБОЛОВО 2027",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27057"
+    },
+    {
+      "id": 118,
+      "name": "ЗАБЕГ ОГНИ ЗАЛИВА СПОРТ ДРАЙВ",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27049"
+    },
+    {
+      "id": 119,
+      "name": "ЗАБЕГ В ПАРКЕ АЛЕКСАНДРИНО СПОРТ ДРАЙВ",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27050"
     },
     {
       "id": 120,

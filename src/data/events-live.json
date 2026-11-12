@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-11T10:26:09.561Z",
-  "count": 185,
+  "updated": "2026-11-12T10:42:55.879Z",
+  "count": 187,
   "sources": {
     "marathonec": 122,
-    "otime": 63,
+    "otime": 65,
     "russiarunning": 0
   },
   "events": [
@@ -794,6 +794,15 @@
     },
     {
       "id": 66,
+      "name": "Лыжный Ретро-забег",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27095"
+    },
+    {
+      "id": 67,
       "name": "Областные соревнования среди обучающихся \"Приз зимних каникул\"",
       "date": "2027-02-28",
       "city": "Россия",
@@ -802,7 +811,7 @@
       "url": "https://reg.o-time.ru/race/27065"
     },
     {
-      "id": 67,
+      "id": 68,
       "name": "Областные спортивные соревнования «Олимпийские надежды» (14.01-15.01)",
       "date": "2027-02-28",
       "city": "Россия",
@@ -811,7 +820,7 @@
       "url": "https://reg.o-time.ru/race/27066"
     },
     {
-      "id": 68,
+      "id": 69,
       "name": "Лыжная гонка Прорыв 2027",
       "date": "2027-02-28",
       "city": "Россия",
@@ -820,7 +829,7 @@
       "url": "https://reg.o-time.ru/race/27063"
     },
     {
-      "id": 69,
+      "id": 70,
       "name": "3 этап Кубка GRAVITY",
       "date": "2027-02-28",
       "city": "Россия",
@@ -829,7 +838,7 @@
       "url": "https://reg.o-time.ru/race/27006"
     },
     {
-      "id": 70,
+      "id": 71,
       "name": "ЗАБЕГ В МОСКОВСКОМ ПАРКЕ ПОБЕДЫ СПОРТ ДРАЙВ",
       "date": "2027-02-28",
       "city": "Россия",
@@ -838,7 +847,7 @@
       "url": "https://reg.o-time.ru/race/27040"
     },
     {
-      "id": 71,
+      "id": 72,
       "name": "Карельский лыжный марафон (СВ)",
       "date": "2027-02-28",
       "city": "Россия",
@@ -847,7 +856,7 @@
       "url": "https://reg.o-time.ru/race/27031"
     },
     {
-      "id": 72,
+      "id": 73,
       "name": "Карельский лыжный марафон (КЛ)",
       "date": "2027-02-28",
       "city": "Россия",
@@ -856,7 +865,7 @@
       "url": "https://reg.o-time.ru/race/27032"
     },
     {
-      "id": 73,
+      "id": 74,
       "name": "Лыжный марафон “Орехово Ски 2027”",
       "date": "2027-02-28",
       "city": "Россия",
@@ -865,7 +874,7 @@
       "url": "https://reg.o-time.ru/race/27064"
     },
     {
-      "id": 74,
+      "id": 75,
       "name": "Лыжная гонка \"Альпинистский лыжный марафон\" (СВ)",
       "date": "2027-02-28",
       "city": "Россия",
@@ -874,7 +883,7 @@
       "url": "https://reg.o-time.ru/race/27010"
     },
     {
-      "id": 75,
+      "id": 76,
       "name": "Карельский лыжный марафон Дети",
       "date": "2027-02-28",
       "city": "Россия",
@@ -883,7 +892,7 @@
       "url": "https://reg.o-time.ru/race/27033"
     },
     {
-      "id": 76,
+      "id": 77,
       "name": "Онежская ледовая ультра",
       "date": "2027-02-28",
       "city": "Россия",
@@ -892,7 +901,7 @@
       "url": "https://reg.o-time.ru/race/27001"
     },
     {
-      "id": 77,
+      "id": 78,
       "name": "ЗАБЕГ В ЮЖНО-ПРИМОРСКОМ ПАРКЕ СПОРТ ДРАЙВ",
       "date": "2027-02-28",
       "city": "Россия",
@@ -901,7 +910,7 @@
       "url": "https://reg.o-time.ru/race/27041"
     },
     {
-      "id": 78,
+      "id": 79,
       "name": "Кавголовский марафон",
       "date": "2027-02-28",
       "city": "Россия",
@@ -910,7 +919,7 @@
       "url": "https://reg.o-time.ru/race/27058"
     },
     {
-      "id": 79,
+      "id": 80,
       "name": "4 этап Кубка GRAVITY",
       "date": "2027-02-28",
       "city": "Россия",
@@ -919,7 +928,7 @@
       "url": "https://reg.o-time.ru/race/27007"
     },
     {
-      "id": 80,
+      "id": 81,
       "name": "ЗАБЕГ В ПАРКЕ ГЕРОЕВ-ПОЖАРНЫХ СПОРТ ДРАЙВ",
       "date": "2027-02-28",
       "city": "Россия",
@@ -928,7 +937,7 @@
       "url": "https://reg.o-time.ru/race/27042"
     },
     {
-      "id": 81,
+      "id": 82,
       "name": "Забег «Соколиная гора»",
       "date": "2027-02-28",
       "city": "Россия",
@@ -937,7 +946,7 @@
       "url": "https://reg.o-time.ru/race/27021"
     },
     {
-      "id": 82,
+      "id": 83,
       "name": "NORDMAN Псковский Марафон 2027",
       "date": "2027-02-28",
       "city": "Россия",
@@ -946,7 +955,7 @@
       "url": "https://reg.o-time.ru/race/27005"
     },
     {
-      "id": 83,
+      "id": 84,
       "name": "ЗАБЕГ В ОТДЕЛЬНОМ ПАРКЕ СПОРТ ДРАЙВ",
       "date": "2027-02-28",
       "city": "Россия",
@@ -955,7 +964,7 @@
       "url": "https://reg.o-time.ru/race/27043"
     },
     {
-      "id": 84,
+      "id": 85,
       "name": "ОТКРЫТИЕ ГРЕБНОГО СЕЗОНА - 2027",
       "date": "2027-02-28",
       "city": "Россия",
@@ -964,7 +973,7 @@
       "url": "https://reg.o-time.ru/race/27077"
     },
     {
-      "id": 85,
+      "id": 86,
       "name": "КУБОК ВЕЛОМАРАФОНОВ СПОРТ ДРАЙВ",
       "date": "2027-02-28",
       "city": "Россия",
@@ -973,7 +982,7 @@
       "url": "https://reg.o-time.ru/race/27051"
     },
     {
-      "id": 86,
+      "id": 87,
       "name": "ВЕЛОМАРАФОН В ОРЕХОВО 2027",
       "date": "2027-02-28",
       "city": "Россия",
@@ -982,7 +991,7 @@
       "url": "https://reg.o-time.ru/race/27052"
     },
     {
-      "id": 87,
+      "id": 88,
       "name": "СПБ БЭКЪЯРД УЛЬТРА 2027",
       "date": "2027-02-28",
       "city": "Россия",
@@ -991,7 +1000,7 @@
       "url": "https://reg.o-time.ru/race/27034"
     },
     {
-      "id": 88,
+      "id": 89,
       "name": "ЗАБЕГ БОЛЬШАЯ НЕВКА СПОРТ ДРАЙВ",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1000,7 +1009,7 @@
       "url": "https://reg.o-time.ru/race/27044"
     },
     {
-      "id": 89,
+      "id": 90,
       "name": "Петровский Гребной Марафон \"От крепости до крепости. 68 км\"",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1009,7 +1018,7 @@
       "url": "https://reg.o-time.ru/race/27083"
     },
     {
-      "id": 90,
+      "id": 91,
       "name": "Петровский Гребной Марафон \"Александр Невский. 47 км\"",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1018,7 +1027,7 @@
       "url": "https://reg.o-time.ru/race/27084"
     },
     {
-      "id": 91,
+      "id": 92,
       "name": "Петровский Гребной Марафон \"Императорская гонка. 19 км\"",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1027,7 +1036,7 @@
       "url": "https://reg.o-time.ru/race/27085"
     },
     {
-      "id": 92,
+      "id": 93,
       "name": "Петровский Гребной Марафон \"Подвиг императора. 20 км\"",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1036,7 +1045,7 @@
       "url": "https://reg.o-time.ru/race/27086"
     },
     {
-      "id": 93,
+      "id": 94,
       "name": "Петровский Гребной Марафон \"Ботанический сад. \"Потешный флот\". 5 км\"",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1045,7 +1054,7 @@
       "url": "https://reg.o-time.ru/race/27088"
     },
     {
-      "id": 94,
+      "id": 95,
       "name": "Петрозаводский «бесконечный» забег",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1054,7 +1063,7 @@
       "url": "https://reg.o-time.ru/race/27013"
     },
     {
-      "id": 95,
+      "id": 96,
       "name": "ПАСТЕРСКИЙ ВЕЛОМАРАФОН 2027",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1063,7 +1072,7 @@
       "url": "https://reg.o-time.ru/race/27053"
     },
     {
-      "id": 96,
+      "id": 97,
       "name": "Фестиваль гребли НЕВСКИЙ ДРАКОН",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1072,7 +1081,7 @@
       "url": "https://reg.o-time.ru/race/27078"
     },
     {
-      "id": 97,
+      "id": 98,
       "name": "ЗАБЕГ В СЕСТРОРЕЦКЕ СПОРТ ДРАЙВ",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1081,7 +1090,7 @@
       "url": "https://reg.o-time.ru/race/27045"
     },
     {
-      "id": 98,
+      "id": 99,
       "name": "БУТ БИОТРОПИКА УЛЬТРА | BIOTROPIKA SOLO MODE",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1090,7 +1099,7 @@
       "url": "https://reg.o-time.ru/race/27008"
     },
     {
-      "id": 99,
+      "id": 100,
       "name": "ОХТИНСКИЙ ВЕЛОМАРАФОН 2027",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1099,7 +1108,7 @@
       "url": "https://reg.o-time.ru/race/27054"
     },
     {
-      "id": 100,
+      "id": 101,
       "name": "STONEMAN 515",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1108,7 +1117,7 @@
       "url": "https://reg.o-time.ru/race/26175"
     },
     {
-      "id": 101,
+      "id": 102,
       "name": "Фестиваль гребли \"Кингисеппские драконы\"",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1117,7 +1126,7 @@
       "url": "https://reg.o-time.ru/race/27079"
     },
     {
-      "id": 102,
+      "id": 103,
       "name": "КРОСС-КАНТРИ ТРИАТЛОН В ОРЕХОВО 2027",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1126,7 +1135,7 @@
       "url": "https://reg.o-time.ru/race/27059"
     },
     {
-      "id": 103,
+      "id": 104,
       "name": "ЗАБЕГ НА КРЕСТОВСКОМ СПОРТ ДРАЙВ",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1135,7 +1144,7 @@
       "url": "https://reg.o-time.ru/race/27046"
     },
     {
-      "id": 104,
+      "id": 105,
       "name": "Морская гребная гонка ВМФ",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1144,7 +1153,7 @@
       "url": "https://reg.o-time.ru/race/27081"
     },
     {
-      "id": 105,
+      "id": 106,
       "name": "ВЕЛОМАРАФОН В КОМАРОВО 2027",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1153,7 +1162,7 @@
       "url": "https://reg.o-time.ru/race/27055"
     },
     {
-      "id": 106,
+      "id": 107,
       "name": "Мста Трейл",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1162,7 +1171,7 @@
       "url": "https://reg.o-time.ru/race/27011"
     },
     {
-      "id": 107,
+      "id": 108,
       "name": "ВЕЛОМАРАФОН В СОСНОВО 2027",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1171,7 +1180,7 @@
       "url": "https://reg.o-time.ru/race/27056"
     },
     {
-      "id": 108,
+      "id": 109,
       "name": "Бэкъярд Биотропика Сибирь",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1180,7 +1189,7 @@
       "url": "https://reg.o-time.ru/race/27012"
     },
     {
-      "id": 109,
+      "id": 110,
       "name": "Бэкъярд УльтраИстра",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1189,7 +1198,16 @@
       "url": "https://reg.o-time.ru/race/27028"
     },
     {
-      "id": 110,
+      "id": 111,
+      "name": "ТРИАТЛОН В СЕСТРОРЕЦКЕ СПОРТ ДРАЙВ",
+      "date": "2027-02-28",
+      "city": "Россия",
+      "distances": [],
+      "source": "o-time",
+      "url": "https://reg.o-time.ru/race/27061"
+    },
+    {
+      "id": 112,
       "name": "ЗАБЕГ СТРЕЛЬНА САНКТ-ПЕТЕРБУРГ СПОРТ ДРАЙВ",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1198,7 +1216,7 @@
       "url": "https://reg.o-time.ru/race/27047"
     },
     {
-      "id": 111,
+      "id": 113,
       "name": "ЗАБЕГ СМОЛЬНАЯ НАБЕРЕЖНАЯ СПОРТ ДРАЙВ",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1207,7 +1225,7 @@
       "url": "https://reg.o-time.ru/race/27048"
     },
     {
-      "id": 112,
+      "id": 114,
       "name": "Кубок Причала Ю",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1216,7 +1234,7 @@
       "url": "https://reg.o-time.ru/race/27082"
     },
     {
-      "id": 113,
+      "id": 115,
       "name": "ВЕЛОМАРАФОН В ЛЕМБОЛОВО 2027",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1225,7 +1243,7 @@
       "url": "https://reg.o-time.ru/race/27057"
     },
     {
-      "id": 114,
+      "id": 116,
       "name": "Закрытие гребного сезона 2027",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1234,7 +1252,7 @@
       "url": "https://reg.o-time.ru/race/27080"
     },
     {
-      "id": 115,
+      "id": 117,
       "name": "ЗАБЕГ ОГНИ ЗАЛИВА СПОРТ ДРАЙВ",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1243,7 +1261,7 @@
       "url": "https://reg.o-time.ru/race/27049"
     },
     {
-      "id": 116,
+      "id": 118,
       "name": "Народный Трейл",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1252,7 +1270,7 @@
       "url": "https://reg.o-time.ru/race/27029"
     },
     {
-      "id": 117,
+      "id": 119,
       "name": "ЗАБЕГ В ПАРКЕ АЛЕКСАНДРИНО СПОРТ ДРАЙВ",
       "date": "2027-02-28",
       "city": "Россия",
@@ -1261,7 +1279,7 @@
       "url": "https://reg.o-time.ru/race/27050"
     },
     {
-      "id": 118,
+      "id": 120,
       "name": "Марий Форест SnowRun – Backyard Ultra",
       "date": "2027-03-06",
       "city": "6.7 км",
@@ -1272,7 +1290,7 @@
       "url": "https://myrace.info/events/2028#new_tab"
     },
     {
-      "id": 119,
+      "id": 121,
       "name": "Ледовый марафон «Горячий лёд Енисея»",
       "date": "2027-03-06",
       "city": "Дивногорск",
@@ -1286,7 +1304,7 @@
       "url": "https://toplist.run/race/ledovyi-marafon-goryachii-led-eniseya-2027#new_tab"
     },
     {
-      "id": 120,
+      "id": 122,
       "name": "Забег «Спорт для всех, спорт для здоровья»",
       "date": "2027-03-09",
       "city": "Ростов-на-Дону",
@@ -1299,7 +1317,7 @@
       "url": "https://toplist.run/race/sport-dlya-vsekh-sport-dlya-zdorovya-2027#new_tab"
     },
     {
-      "id": 121,
+      "id": 123,
       "name": "Зимний горный трейл Aurora Trail",
       "date": "2027-03-13",
       "city": "Кандалакша",
@@ -1313,7 +1331,7 @@
       "url": "https://marathonec.ru/zimnij-gornyj-trejl-avrora/"
     },
     {
-      "id": 122,
+      "id": 124,
       "name": "Фестиваль скайраннинга «Югус»",
       "date": "2027-03-13",
       "city": "Междуреченск",
@@ -1327,7 +1345,7 @@
       "url": "https://toplist.run/race/yugus-2027#new_tab"
     },
     {
-      "id": 123,
+      "id": 125,
       "name": "Трейл «Ирәмәл Ярыш: новый вызов»",
       "date": "2027-03-27",
       "city": "Белорецк",
@@ -1341,7 +1359,7 @@
       "url": "https://marathonec.ru/iremel-yarish/"
     },
     {
-      "id": 124,
+      "id": 126,
       "name": "Ночной забег с фонариками",
       "date": "2027-03-27",
       "city": "Красноярск",
@@ -1353,7 +1371,7 @@
       "url": "https://toplist.run/race/nochnoi-zabeg-s-fonarikami-2027#new_tab"
     },
     {
-      "id": 125,
+      "id": 127,
       "name": "Фестиваль трейлраннинга «Бештаугорский Крест»",
       "date": "2027-04-03",
       "city": "Пятигорск",
@@ -1367,7 +1385,7 @@
       "url": "https://marathonec.ru/trail-beshtaugorsky-krest/"
     },
     {
-      "id": 126,
+      "id": 128,
       "name": "Dagestan Wild Trail 2027",
       "date": "2027-04-09",
       "city": "Махачкала",
@@ -1383,7 +1401,7 @@
       "url": "https://marathonec.ru/dagestan-wild-trail-2026/"
     },
     {
-      "id": 127,
+      "id": 129,
       "name": "Трейл «Химкинский лес»",
       "date": "2027-04-11",
       "city": "Химки",
@@ -1396,7 +1414,7 @@
       "url": "https://marathonec.ru/trejl-ximkinskij-les/"
     },
     {
-      "id": 128,
+      "id": 130,
       "name": "Хехцир Трейл весна",
       "date": "2027-04-17",
       "city": "Хабаровск",
@@ -1409,7 +1427,7 @@
       "url": "https://toplist.run/race/khekhtsir-treil-vesna-2027#new_tab"
     },
     {
-      "id": 129,
+      "id": 131,
       "name": "Zenkovo Sky Race",
       "date": "2027-04-19",
       "city": "14 км",
@@ -1420,7 +1438,7 @@
       "url": "https://toplist.run/race/zenkovo-sky-race-2026#new_tab"
     },
     {
-      "id": 130,
+      "id": 132,
       "name": "Варада трейл",
       "date": "2027-04-24",
       "city": "Новороссийск",
@@ -1436,7 +1454,7 @@
       "url": "https://toplist.run/race/varada-treil-2027#new_tab"
     },
     {
-      "id": 131,
+      "id": 133,
       "name": "Тутаевский полумарафон «Май. Мир. Молодость»",
       "date": "2027-05-01",
       "city": "Тутаев",
@@ -1450,7 +1468,7 @@
       "url": "https://marathonec.ru/tutaev-polumarafon/"
     },
     {
-      "id": 132,
+      "id": 134,
       "name": "Grand Kislovodsk",
       "date": "2027-05-02",
       "city": "Кисловодск",
@@ -1466,7 +1484,7 @@
       "url": "https://myrace.info/events/1900#new_tab"
     },
     {
-      "id": 133,
+      "id": 135,
       "name": "Baskunchak Ultra Discovery",
       "date": "2027-05-07",
       "city": "Ахтубинск",
@@ -1481,7 +1499,7 @@
       "url": "https://toplist.run/race/baskunchak-ultra-discovery-2027#new_tab"
     },
     {
-      "id": 134,
+      "id": 136,
       "name": "Царскосельский марафон 2027",
       "date": "2027-05-10",
       "city": "Санкт-Петербург",
@@ -1495,7 +1513,7 @@
       "url": "https://marathonec.ru/tcarskoselskij-marafon-gid/"
     },
     {
-      "id": 135,
+      "id": 137,
       "name": "Медовый забег",
       "date": "2027-05-10",
       "city": "Горно-Алтайск",
@@ -1508,7 +1526,7 @@
       "url": "https://toplist.run/race/medovyi-zabeg-2027#new_tab"
     },
     {
-      "id": 136,
+      "id": 138,
       "name": "Кунтаг Ультра Трейл",
       "date": "2027-05-15",
       "city": "Усть-Абакан",
@@ -1521,7 +1539,7 @@
       "url": "https://toplist.run/race/kuntag-ultra-treil-2027#new_tab"
     },
     {
-      "id": 137,
+      "id": 139,
       "name": "Мышкинский полумарафон «По шести холмам»",
       "date": "2027-05-16",
       "city": "Мышкин",
@@ -1535,7 +1553,7 @@
       "url": "https://marathonec.ru/myshkin-polumarafon/"
     },
     {
-      "id": 138,
+      "id": 140,
       "name": "Alol Ultra Trail Unreal",
       "date": "2027-05-21",
       "city": "Псков",
@@ -1552,7 +1570,7 @@
       "url": "https://toplist.run/race/ftr-alol-ultra-trail-unreal-2027#new_tab"
     },
     {
-      "id": 139,
+      "id": 141,
       "name": "Всероссийский полумарафон «ЗаБег.РФ» 2027",
       "date": "2027-05-22",
       "city": "Вся Россия",
@@ -1565,7 +1583,7 @@
       "url": "https://marathonec.ru/zabeg-rf-gid/"
     },
     {
-      "id": 140,
+      "id": 142,
       "name": "Переславский марафон «Александровские вёрсты»",
       "date": "2027-05-30",
       "city": "Переславль-Залесский",
@@ -1580,7 +1598,7 @@
       "url": "https://marathonec.ru/pereslavl-marafon/"
     },
     {
-      "id": 141,
+      "id": 143,
       "name": "Аргамак трейл",
       "date": "2027-05-30",
       "city": "Елец",
@@ -1594,7 +1612,7 @@
       "url": "https://reg.russiarunning.com/event/argamak2027#new_tab"
     },
     {
-      "id": 142,
+      "id": 144,
       "name": "Тагил ультра трейл",
       "date": "2027-06-05",
       "city": "Нижний Тагил",
@@ -1608,7 +1626,7 @@
       "url": "https://toplist.run/race/tagil-ultra-treil-2027#new_tab"
     },
     {
-      "id": 143,
+      "id": 145,
       "name": "Забег «Закатная миля. Сибирь»",
       "date": "2027-06-05",
       "city": "Красноярск",
@@ -1620,7 +1638,7 @@
       "url": "https://toplist.run/race/zakatnaya-milya-2027#new_tab"
     },
     {
-      "id": 144,
+      "id": 146,
       "name": "Полумарафон «Здорово, Кострома!»",
       "date": "2027-06-12",
       "city": "Кострома",
@@ -1634,7 +1652,7 @@
       "url": "https://marathonec.ru/kostroma-polumarafon/"
     },
     {
-      "id": 145,
+      "id": 147,
       "name": "Crazy Owl 50 наследие Николая Львова, русский Да Винчи 2027",
       "date": "2027-06-12",
       "city": "Старая Ладога",
@@ -1648,7 +1666,7 @@
       "url": "https://marathonec.ru/crazy-owl-50/"
     },
     {
-      "id": 146,
+      "id": 148,
       "name": "Debut – backyard ultra",
       "date": "2027-06-12",
       "city": "6.7 км",
@@ -1659,7 +1677,7 @@
       "url": "https://toplist.run/race/debut-2027-2026#new_tab"
     },
     {
-      "id": 147,
+      "id": 149,
       "name": "Трейл Wild Peak",
       "date": "2027-06-19",
       "city": "Акташ",
@@ -1673,7 +1691,7 @@
       "url": "https://myrace.info/events/2027#new_tab"
     },
     {
-      "id": 148,
+      "id": 150,
       "name": "Красочный забег в Красноярске",
       "date": "2027-06-20",
       "city": "Красноярск",
@@ -1685,7 +1703,7 @@
       "url": "https://marathonec.ru/krasochnyj-zabeg-v-krasnoyarske/"
     },
     {
-      "id": 149,
+      "id": 151,
       "name": "Arkhyz Wild Trail 2027",
       "date": "2027-06-25",
       "city": "Архыз",
@@ -1701,7 +1719,7 @@
       "url": "https://marathonec.ru/arkhyz-wild-trail-2026/"
     },
     {
-      "id": 150,
+      "id": 152,
       "name": "Угличский полумарафон «Волжский берег»",
       "date": "2027-06-27",
       "city": "Углич",
@@ -1715,7 +1733,7 @@
       "url": "https://marathonec.ru/uglich-polumarafon/"
     },
     {
-      "id": 151,
+      "id": 153,
       "name": "Международный марафон «Алые паруса»",
       "date": "2027-06-27",
       "city": "Санкт-Петербург",
@@ -1730,7 +1748,7 @@
       "url": "https://reg.russiarunning.com/event/SCARLETSAILS2027#new_tab"
     },
     {
-      "id": 152,
+      "id": 154,
       "name": "Забег «Русская тропа»",
       "date": "2027-07-03",
       "city": "Гаврилов Посад",
@@ -1750,7 +1768,7 @@
       "url": "https://toplist.run/race/russkaya-tropa-2027#new_tab"
     },
     {
-      "id": 153,
+      "id": 155,
       "name": "Трейл «Золотая верста»",
       "date": "2027-07-04",
       "city": "Гурьевск",
@@ -1764,7 +1782,7 @@
       "url": "https://toplist.run/race/treil-zolotaya-versta-2027#new_tab"
     },
     {
-      "id": 154,
+      "id": 156,
       "name": "Полумарафон «Сергиевым путём»",
       "date": "2027-07-10",
       "city": "Сергиев-Посад",
@@ -1777,7 +1795,7 @@
       "url": "https://marathonec.ru/polumarafon-sergievym-putyom/"
     },
     {
-      "id": 155,
+      "id": 157,
       "name": "Энгри Бёрдс трейл",
       "date": "2027-07-10",
       "city": "Красноярск",
@@ -1789,7 +1807,7 @@
       "url": "https://toplist.run/race/engri-berds-treil-2027#new_tab"
     },
     {
-      "id": 156,
+      "id": 158,
       "name": "Забег «Женская семёрка»",
       "date": "2027-07-11",
       "city": "Красноярск",
@@ -1801,7 +1819,7 @@
       "url": "https://toplist.run/race/zhenskaya-semerka-2027#new_tab"
     },
     {
-      "id": 157,
+      "id": 159,
       "name": "Трейл Poma Run Cup",
       "date": "2027-07-17",
       "city": "Суздаль",
@@ -1814,7 +1832,7 @@
       "url": "https://reg.russiarunning.com/event/POMARUNCUP2027#new_tab"
     },
     {
-      "id": 158,
+      "id": 160,
       "name": "Фестиваль ВолховМен «На пути из варяг в греки»",
       "date": "2027-07-17",
       "city": "Великий Новгород",
@@ -1827,7 +1845,7 @@
       "url": "https://reg.russiarunning.com/event/VOLKhOVMEN#new_tab"
     },
     {
-      "id": 159,
+      "id": 161,
       "name": "Ультратрейл «Восьмёрка»",
       "date": "2027-07-17",
       "city": "80 км",
@@ -1838,7 +1856,7 @@
       "url": "https://reg.russiarunning.com/event/ultratrailvosmerka2027#new_tab"
     },
     {
-      "id": 160,
+      "id": 162,
       "name": "Golden Ring Ultra Trail 2027",
       "date": "2027-07-23",
       "city": "Суздаль",
@@ -1855,7 +1873,7 @@
       "url": "https://marathonec.ru/golden-ring-ultra-trail-100/"
     },
     {
-      "id": 161,
+      "id": 163,
       "name": "Фестиваль трейлраннинга SkyRunFest",
       "date": "2027-07-29",
       "city": "Ергаки",
@@ -1869,7 +1887,7 @@
       "url": "https://toplist.run/race/skyrunfest-2027#new_tab"
     },
     {
-      "id": 162,
+      "id": 164,
       "name": "Alpindustria Elbrus Race",
       "date": "2027-08-01",
       "city": "100 км",
@@ -1880,7 +1898,7 @@
       "url": "https://toplist.run/race/alpindustria-elbrus-race-2027#new_tab"
     },
     {
-      "id": 163,
+      "id": 165,
       "name": "Elbrus Wild Trail 2027",
       "date": "2027-08-06",
       "city": "Терскол",
@@ -1896,7 +1914,7 @@
       "url": "https://marathonec.ru/t-bank-elbrus-wild-trail-gid/"
     },
     {
-      "id": 164,
+      "id": 166,
       "name": "Riekkalansaari Ultra Trail",
       "date": "2027-08-13",
       "city": "Риеккалансаари",
@@ -1912,7 +1930,7 @@
       "url": "https://marathonec.ru/riekkalansaari-trail/"
     },
     {
-      "id": 165,
+      "id": 167,
       "name": "Wolf Trail Backyard Ultra «Волчьими тропами»",
       "date": "2027-08-13",
       "city": "Нижний Новгород",
@@ -1924,7 +1942,7 @@
       "url": "https://reg.russiarunning.com/event/WOLFTRAIL2027#new_tab"
     },
     {
-      "id": 166,
+      "id": 168,
       "name": "Рыбинский полумарафон «Великий хлебный путь»",
       "date": "2027-08-14",
       "city": "Рыбинск",
@@ -1938,7 +1956,7 @@
       "url": "https://marathonec.ru/rybinsk-polumarafon/"
     },
     {
-      "id": 167,
+      "id": 169,
       "name": "Большой Енисейский трейл",
       "date": "2027-08-16",
       "city": "Красноярск",
@@ -1954,7 +1972,7 @@
       "url": "https://marathonec.ru/bolshoj-enisejskij-trejl-2/"
     },
     {
-      "id": 168,
+      "id": 170,
       "name": "Норильск. Горный старт",
       "date": "2027-08-21",
       "city": "Норильск",
@@ -1969,7 +1987,7 @@
       "url": "https://myrace.info/events/2064#new_tab"
     },
     {
-      "id": 169,
+      "id": 171,
       "name": "Полумарафон «Ростов Великий»",
       "date": "2027-08-22",
       "city": "Ростов Великий",
@@ -1983,7 +2001,7 @@
       "url": "https://marathonec.ru/rostov-veliky-polumarafon/"
     },
     {
-      "id": 170,
+      "id": 172,
       "name": "Челябинский марафон 2027",
       "date": "2027-08-22",
       "city": "Челябинск",
@@ -1997,7 +2015,7 @@
       "url": "https://marathonec.ru/chelyabinsky-marafon-gid/"
     },
     {
-      "id": 171,
+      "id": 173,
       "name": "Fury trail",
       "date": "2027-08-22",
       "city": "Ангарск",
@@ -2011,7 +2029,7 @@
       "url": "https://toplist.run/race/fury-trail-2027-2026#new_tab"
     },
     {
-      "id": 172,
+      "id": 174,
       "name": "Красмарафон «Жара» 2027",
       "date": "2027-08-28",
       "city": "Красноярск",
@@ -2024,7 +2042,7 @@
       "url": "https://marathonec.ru/krasmarafon-zhara-gid/"
     },
     {
-      "id": 173,
+      "id": 175,
       "name": "Трейл «Охота на Койского мамонта»",
       "date": "2027-08-29",
       "city": "40 км",
@@ -2035,7 +2053,7 @@
       "url": "https://toplist.run/race/okhota-na-koiskogo-mamonta-2027-2026#new_tab"
     },
     {
-      "id": 174,
+      "id": 176,
       "name": "Т-Банк Rosa Wild Fest",
       "date": "2027-09-03",
       "city": "Сочи",
@@ -2055,7 +2073,7 @@
       "url": "https://marathonec.ru/t-bank-rosa-wild-trail/"
     },
     {
-      "id": 175,
+      "id": 177,
       "name": "Vottovaara Mountain Race",
       "date": "2027-09-04",
       "city": "Гимолы",
@@ -2069,7 +2087,7 @@
       "url": "https://marathonec.ru/vottovaara-mountain-race/"
     },
     {
-      "id": 176,
+      "id": 178,
       "name": "Пермский марафон 2027",
       "date": "2027-09-04",
       "city": "Пермь",
@@ -2084,7 +2102,7 @@
       "url": "https://marathonec.ru/perm-marathon-gid/"
     },
     {
-      "id": 177,
+      "id": 179,
       "name": "Ярославский полумарафон «Золотое кольцо» 2027",
       "date": "2027-09-05",
       "city": "Ярославль",
@@ -2098,7 +2116,7 @@
       "url": "https://marathonec.ru/yaroslavsky-polumarafon-gid/"
     },
     {
-      "id": 178,
+      "id": 180,
       "name": "Ультратрейл «Тридцатка»",
       "date": "2027-09-11",
       "city": "59 км",
@@ -2109,7 +2127,7 @@
       "url": "https://reg.russiarunning.com/event/ULTRATREYLTRIDTsATKA2027#new_tab"
     },
     {
-      "id": 179,
+      "id": 181,
       "name": "Забег «Красноярские мосты»",
       "date": "2027-09-18",
       "city": "Красноярск",
@@ -2123,7 +2141,7 @@
       "url": "https://toplist.run/race/krasnoyarskie-mosty-2027#new_tab"
     },
     {
-      "id": 180,
+      "id": 182,
       "name": "Ледокол трейл",
       "date": "2027-09-25",
       "city": "Иркутск",
@@ -2135,7 +2153,7 @@
       "url": "https://toplist.run/race/ledokol-treil-2027-irkutsk-2027#new_tab"
     },
     {
-      "id": 181,
+      "id": 183,
       "name": "White Bride Ultra Gelendzhik",
       "date": "2027-10-01",
       "city": "Геленджик",
@@ -2150,7 +2168,7 @@
       "url": "https://goldenultra.ru/wbu/#new_tab"
     },
     {
-      "id": 182,
+      "id": 184,
       "name": "Кисловодский марафон KAVKAZ.RUN 2027",
       "date": "2027-10-09",
       "city": "Кисловодск",
@@ -2166,7 +2184,7 @@
       "url": "https://marathonec.ru/kislovodskiy-marafon-gid/"
     },
     {
-      "id": 183,
+      "id": 185,
       "name": "Полумарафон «Моя столица» 2027",
       "date": "2027-10-09",
       "city": "Москва",
@@ -2179,7 +2197,7 @@
       "url": "https://marathonec.ru/moya-stolica-polumarafon-gid/"
     },
     {
-      "id": 184,
+      "id": 186,
       "name": "Трейл «Сосновый рай»",
       "date": "2027-10-16",
       "city": "Самара",
@@ -2191,7 +2209,7 @@
       "url": "https://toplist.run/race/sosnovyi-rai-2027-2026#new_tab"
     },
     {
-      "id": 185,
+      "id": 187,
       "name": "Х трейл",
       "date": "2027-10-24",
       "city": "Красноярск",
